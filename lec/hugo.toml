@@ -5,7 +5,7 @@ theme = 'hugo-theme-cleanwhite'
 hasCoreEdge = true
 enableEmoji = true # Habilita emojis nativos do Hugo como :peace_symbol:
 
-# Permite que você use HTML dentro dos arquivos Markdown (essencial para mapas/botões)
+# Permite que se use HTML dentro dos arquivos Markdown (essencial para mapas/botões)
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
