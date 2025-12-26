@@ -1,14 +1,12 @@
-baseURL = 'https://lec.pages.dev/'
+baseURL = 'https://lec-itatiba.pages.dev/'
 languageCode = 'pt-br'
 title = 'Lar Espírita Cristão'
 theme = 'hugo-theme-cleanwhite'
-hasCoreEdge = true
-enableEmoji = true
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true 
+      unsafe = true
 
 [params]
   header_image = "images/foto-fachada.jpg"
@@ -16,16 +14,8 @@ enableEmoji = true
   slogan = "Fora da Caridade não há Salvação"
   description = "Evangelho, acolhimento e consolação à luz da Doutrina Espírita."
   mainSections = ["post", "agenda", "eventos"]
-  
-  # Aparência e Sidebar
   sidebar = true
   sidebar_about_description = "Instituição dedicada ao estudo e à prática da caridade cristã. 🙏"
-  featured_tags = true
-  featured_condition_size = 1
-
-  [params.csp]
-  enable = true
-  img-src = "'self' https://hits.seeyoufarm.com https://img.shields.io https://visitor-badge.laobi.icu" 
 
 [[menu.main]]
   name = "Início 🏠"
@@ -36,16 +26,3 @@ enableEmoji = true
   name = "Atividades 🗓️"
   url = "/atividades/"
   weight = 2
-
-[[menu.main]]
-  name = "Estudos 📖"
-  url = "/post/"
-  weight = 3
-
-[[menu.main]]
-  name = "Como Ajudar ❤️"
-  url = "/ajuda/"
-  weight = 4
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
