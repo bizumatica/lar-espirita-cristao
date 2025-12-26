@@ -16,6 +16,7 @@ theme = 'hugo-theme-cleanwhite'
   mainSections = ["post", "agenda", "eventos"]
   sidebar = true
   sidebar_about_description = "Instituição dedicada ao estudo e à prática da caridade cristã. 🙏"
+  custom_css = ["css/custom.css"]
 
 [[menu.main]]
   name = "Início 🏠"
