@@ -1,6 +1,6 @@
 ---
 title: "Chico Xavier no Pinga-Fogo (1971): Um Marco Histórico"
-date: 2025-12-27
+date: 2025-12-20
 categories: 
   - "chico-xavier"
 description: "Assista na íntegra as duas participações históricas de Chico Xavier no programa Pinga-Fogo da TV Tupi."
