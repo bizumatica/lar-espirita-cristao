@@ -13,7 +13,8 @@ theme = 'hugo-theme-cleanwhite'
   title = "Lar Espírita Cristão"
   slogan = "Fora da Caridade não há Salvação"
   
-  description = 'Evangelho, acolhimento e consolação à luz da Doutrina Espírita. <style>header.intro-header .site-heading h1, header.intro-header .site-heading .subheading, .navbar-custom .nav li a, .navbar-custom .navbar-brand { text-shadow: 2px 2px 12px rgba(0,0,0,1), 0px 0px 15px rgba(0,0,0,0.8) !important; color: #ffffff !important; opacity: 1 !important; } header.intro-header .container { background: rgba(0,0,0,0.4); padding: 30px; border-radius: 15px; max-width: 85% !important; }</style>'
+  description = "Evangelho, acolhimento e consolação à luz da Doutrina Espírita."
+  custom_css = ["css/custom.css"]
   
   mainSections = ["post", "agenda"]
   sidebar = true
