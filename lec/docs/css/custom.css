@@ -1,12 +1,16 @@
-/* Sombreado para o título e subtítulo sobre a imagem do topo */
-.intro-header .site-heading h1, 
-.intro-header .post-heading h1,
-.intro-header .site-heading .subheading {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+/* Força a sombra no título e subtítulo */
+header.intro-header .site-heading h1, 
+header.intro-header .site-heading .subheading,
+.navbar-custom .nav li a,
+.navbar-custom .navbar-brand {
+    text-shadow: 2px 2px 12px rgba(0,0,0,1), 0px 0px 15px rgba(0,0,0,0.8) !important;
+    color: #ffffff !important;
 }
 
-/* Opcional: Adiciona um fundo levemente escurecido na imagem para dar mais contraste */
-.intro-header {
-    background-color: rgba(0, 0, 0, 0.3); /* Escurece 30% da imagem */
-    background-blend-mode: overlay;
+/* Cria o fundo escurecido atrás do texto principal */
+header.intro-header .container {
+    background: rgba(0,0,0,0.4) !important;
+    padding: 30px !important;
+    border-radius: 15px !important;
+    max-width: 85% !important;
 }

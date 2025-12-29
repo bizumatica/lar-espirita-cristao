@@ -12,15 +12,12 @@ theme = 'hugo-theme-cleanwhite'
   header_image = "images/foto-fachada.jpg"
   title = "Lar Espírita Cristão"
   slogan = "Fora da Caridade não há Salvação"
-  
   description = "Evangelho, acolhimento e consolação à luz da Doutrina Espírita."
-  custom_css = ["css/custom.css"]
-  
-  mainSections = ["post", "agenda"]
+  mainSections = ["post", "agenda", "eventos"]
   sidebar = true
   sidebar_about_description = "Instituição dedicada ao estudo e à prática da caridade cristã. 🙏"
+  custom_css = ["css/custom.css"]
 
-# MENU ATUALIZADO PARA O NOVO CAMINHO DA AGENDA
 [[menu.main]]
   name = "Início 🏠"
   url = "/"
@@ -28,5 +25,7 @@ theme = 'hugo-theme-cleanwhite'
 
 [[menu.main]]
   name = "Agenda 🗓️"
-  url = "/agenda"
+  url = "/agenda/"  # Certifique-se de que a pasta no conteúdo se chama 'agenda'
   weight = 2
+
+paginate = 5 # Mostra apenas 5 posts por página
