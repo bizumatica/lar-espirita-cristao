@@ -2,6 +2,7 @@ baseURL = 'https://lec-itatiba.pages.dev/'
 languageCode = 'pt-br'
 title = 'Lar Espírita Cristão'
 theme = 'hugo-theme-cleanwhite'
+pagerSize = 5 # Mostra apenas 5 posts por página
 
 [markup]
   [markup.goldmark]
@@ -16,6 +17,7 @@ theme = 'hugo-theme-cleanwhite'
   mainSections = ["post", "agenda", "eventos"]
   sidebar = true
   sidebar_about_description = "Instituição dedicada ao estudo e à prática da caridade cristã. 🙏"
+  
   custom_css = ["css/custom.css"]
 
 [[menu.main]]
@@ -25,7 +27,5 @@ theme = 'hugo-theme-cleanwhite'
 
 [[menu.main]]
   name = "Agenda 🗓️"
-  url = "/agenda/"  # Certifique-se de que a pasta no conteúdo se chama 'agenda'
+  url = "/post/agenda/"
   weight = 2
-
-paginate = 5 # Mostra apenas 5 posts por página
