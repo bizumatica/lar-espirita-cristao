@@ -1,8 +1,10 @@
 ---
-title: "Chico Xavier no Pinga-Fogo (1971): Um Marco Histórico"
+title: "Pinga-Fogo"
 menu: "main"
 weight: 4
 ---
+
+"Chico Xavier no Pinga-Fogo (1971): Um Marco Histórico"
 
 ![Chico no Pinga-Fogo 1](/lec/docs/images/pinga-um-224x168.jpg)
 
