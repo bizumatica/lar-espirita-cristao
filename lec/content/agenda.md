@@ -1,9 +1,7 @@
 ---
-title: "Horários de Atividades"
-date: 2025-12-30
-description: "Confira a programação completa do Lar Espírita Cristão e Casa do Pão Chico Xavier"
-weight: 1
-draft: false
+title: "Agenda"
+menu: "main"
+weight: 3
 ---
 
 🕊️ **Muita Paz!** Compartilhamos com alegria os horários das atividades em nossas casas para que você possa se programar e participar conosco.

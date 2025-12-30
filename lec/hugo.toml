@@ -32,7 +32,9 @@ theme = "mainroad"
   url = "/historia/"
   weight = 2
 
+# removi o agenda
+
 [[menu.main]]
-  name = "Agenda"
-  url = "/post/agenda/"
-  weight = 3
+  name = "Pinga Fogo"
+  url = "/pinga-fogo/"
+  weight = 4
