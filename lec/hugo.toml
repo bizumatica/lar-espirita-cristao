@@ -1,31 +1,35 @@
-baseURL = 'https://lec-itatiba.pages.dev/'
-languageCode = 'pt-br'
-title = 'Lar Espírita Cristão'
-theme = 'hugo-theme-cleanwhite'
-pagerSize = 5 # Mostra apenas 5 posts por página
+baseURL = "https://lec-itatiba.pages.dev/"
+languageCode = "pt-br"
+title = "Lar Espírita Cristão"
+theme = "mainroad"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[pagination]
+  pagerSize = 5
 
 [params]
-  header_image = "images/foto-fachada.jpg"
-  title = "Lar Espírita Cristão"
-  slogan = "Fora da Caridade não há Salvação"
-  description = "Evangelho, acolhimento e consolação à luz da Doutrina Espírita."
-  mainSections = ["post", "agenda", "eventos"]
-  sidebar = true
-  sidebar_about_description = "Instituição dedicada ao estudo e à prática da caridade cristã. 🙏"
-  
-  custom_css = ["css/custom.css"]
+  description = "Evangelho, acolhimento e consolação em Itatiba"
+  subtitle = "Fora da Caridade não há Salvação"
+  # O Mainroad usa essa cor vermelha padrão, combina com 'Cristão'
+  highlightColor = "#e22d30" 
+
+  [params.sidebar]
+    home = "right"
+    list = "right"
+    single = "right"
+    # Adicionamos 'agenda_custom' que criaremos abaixo
+    widgets = ["search", "recent", "agenda_custom", "categories"]
 
 [[menu.main]]
-  name = "Início 🏠"
+  name = "Início"
   url = "/"
   weight = 1
 
 [[menu.main]]
-  name = "Agenda 🗓️"
-  url = "/post/agenda/"
+  name = "História"
+  url = "/historia/"
   weight = 2
+
+[[menu.main]]
+  name = "Agenda"
+  url = "/post/agenda/"
+  weight = 3
