@@ -1,7 +1,7 @@
 ---
 title: "Chico Xavier"
-# menu: "main"
-# weight: 6
+menu: "main"
+weight: 6
 ---
 
 # Chico Xavier: O Mandato de Amor e a Fidelidade ao Cristo
