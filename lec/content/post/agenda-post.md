@@ -30,12 +30,12 @@ Se não puder comparecer presencialmente, acompanhe nossas transmissões:
 | **Segunda a Sábado** | 13:30 – 14:15 | Lar Espírita Cristão (Evangelho e Passes) |
 | **3ª e 6ª feira** | 13:30 – 14:15 | Entrevistas |
 | **Terça-feira** | 18:55 – 19:30 | Lar Espírita Cristão (Portão fecha às 18:55) |
-| **Quinta-feira** | 20:00 – 21:15 | Casa do Pão Chico Xavier (Presencial) |
+| **Quinta-feira** | 19:40 – 21:15 | Casa do Pão Chico Xavier (Presencial) |
 
 ---
 
 ### 👧👦 Evangelização Infantil
-Um espaço de aprendizado e luz para os pequenos.
+Um espaço de Jesus e Evangelho para os pequenos.
 
 **Casa do Pão Chico Xavier:**
 * **6ª feira:** 15:00 às 15:30
