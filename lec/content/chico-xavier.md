@@ -4,7 +4,7 @@ menu: "main"
 weight: 6
 ---
 
-# Chico Xavier: O Mandato de Amor e a Fidelidade ao Cristo
+# O Mandato de Amor e a Fidelidade ao Cristo
 
 Francisco Cândido Xavier não foi apenas um médium; foi um fenômeno de renúncia e disciplina que alterou os rumos do Espiritismo no Brasil e no mundo. Beber na fonte de quem conviveu com ele, como **Carlos Baccelli** e **Geraldo Lemos Neto**, nos permite enxergar o homem por trás do fenômeno, cuja vida foi o seu maior livro.
 
@@ -12,7 +12,7 @@ Francisco Cândido Xavier não foi apenas um médium; foi um fenômeno de renún
 
 Segundo os relatos de seus biógrafos e amigos próximos, a mediunidade de Chico não era um simples dom, mas um **mandato de missão**. Desde o encontro com Emmanuel em 1931, a diretriz foi clara: *Disciplina, Disciplina e Disciplina.*
 
-![Chico Xavier Psicografando](https://upload.wikimedia.org/wikipedia/commons/b/b3/Chico_Xavier_Psicografando.jpg)
+![Chico Xavier Psicografando](/images/Francico_Candido_Xavier.jpg)
 *Legenda: Chico Xavier em momento de serviço, exemplificando o mandato recebido.*
 
 Chico abdicou de vida privada, posses e descanso para servir de ponte entre dois mundos. Ele psicografou mais de 500 livros, cujos direitos autorais foram integralmente doados a instituições de caridade, reafirmando seu desapego absoluto e caráter ilibado.
@@ -33,7 +33,7 @@ Para aprofundar o estudo sobre a vida de Chico Xavier, selecionamos conteúdos e
 
 * **[Documentário: Data Limite segundo Chico Xavier](https://www.youtube.com/watch?v=kYv9vUAs0E4)** - Explicação detalhada de Geraldo Lemos Neto sobre as profecias e o futuro da humanidade.
 * **[Entrevista de Carlos Baccelli sobre Chico](https://www.youtube.com/watch?v=FjIuK7f019M)** - Relatos sobre a convivência e o trabalho assistencial em Uberaba.
-* **[Chico Xavier no Programa Pinga-Fogo (Tupi)](https://www.youtube.com/watch?v=P2LshV_yqX4)** - O marco histórico da divulgação espírita no Brasil.
+* **[Chico Xavier no Programa Pinga-Fogo (Tupi)](https://lec-itatiba.pages.dev/pinga-fogo/)** - O marco histórico da divulgação espírita no Brasil.
 
 ---
 
@@ -41,12 +41,12 @@ Para aprofundar o estudo sobre a vida de Chico Xavier, selecionamos conteúdos e
 
 Chico não pregava o Evangelho; ele o vivia. Sua existência era uma extensão das bem-aventuranças. Mesmo sob calúnias ou perseguições, sua resposta era o silêncio respeitoso ou a prece. Ele consolidou o "Espiritismo Prático", onde o conhecimento doutrinário se traduzia em amparo aos necessitados e consolo às famílias enlutadas.
 
-![Chico Xavier e o Povo](https://upload.wikimedia.org/wikipedia/commons/a/a2/Chico_Xavier_na_comunidade.jpg)
+![Chico Xavier e o Povo](/images/chico-xavierlar-caridade-.jpg)
 *Legenda: A caridade silenciosa e o vínculo direto com os mais necessitados.*
 
 ## Conclusão
 
-Ao olharmos para a trajetória de Chico sob a ótica de seus amigos e biógrafos, compreendemos que ele foi o "fiel seguidor" que o Consolador Prometido precisava para florescer em solo brasileiro. Seu mandato foi cumprido com a pureza de quem sabia que era apenas um "cisco", mas um cisco que permitiu à luz do Alto brilhar sem obstáculos.
+Ao olharmos para a trajetória de Chico sob a ótica de seus amigos e biógrafos, compreendemos que ele foi o *fiel seguidor* que o Consolador Prometido precisava para florescer em solo brasileiro. Seu mandato foi cumprido com a pureza de quem sabia que era apenas um "cisco", mas um cisco que permitiu à luz do Alto brilhar sem obstáculos.
 
 ---
-*Este artigo é uma contribuição do **Laboratório de Estudos Espíritas de Itatiba (LEC)** para a divulgação da luz doutrinária.*
+*Este artigo é uma contribuição do **Lar Espírita Cristão - Itatiba (LEC)** para a divulgação doutrinária.*
