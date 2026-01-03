@@ -27,16 +27,6 @@ Geraldo Lemos Neto, fundador da [Vinha de Luz](https://vinhadeluz.com.br), desta
 
 ---
 
-## Conteúdo Recomendado (Vídeos)
-
-Para aprofundar o estudo sobre a vida de Chico Xavier, selecionamos conteúdos essenciais:
-
-* **[Documentário: Data Limite segundo Chico Xavier](https://www.youtube.com/watch?v=kYv9vUAs0E4)** - Explicação detalhada de Geraldo Lemos Neto sobre as profecias e o futuro da humanidade.
-* **[Entrevista de Carlos Baccelli sobre Chico](https://www.youtube.com/watch?v=FjIuK7f019M)** - Relatos sobre a convivência e o trabalho assistencial em Uberaba.
-* **[Chico Xavier no Programa Pinga-Fogo (Tupi)](https://lec-itatiba.pages.dev/pinga-fogo/)** - O marco histórico da divulgação espírita no Brasil.
-
----
-
 ## Caráter Ilibado e Vínculo com o Cristo
 
 Chico não pregava o Evangelho; ele o vivia. Sua existência era uma extensão das bem-aventuranças. Mesmo sob calúnias ou perseguições, sua resposta era o silêncio respeitoso ou a prece. Ele consolidou o "Espiritismo Prático", onde o conhecimento doutrinário se traduzia em amparo aos necessitados e consolo às famílias enlutadas.
@@ -47,6 +37,16 @@ Chico não pregava o Evangelho; ele o vivia. Sua existência era uma extensão d
 ## Conclusão
 
 Ao olharmos para a trajetória de Chico sob a ótica de seus amigos e biógrafos, compreendemos que ele foi o *fiel seguidor* que o Consolador Prometido precisava para florescer em solo brasileiro. Seu mandato foi cumprido com a pureza de quem sabia que era apenas um "cisco", mas um cisco que permitiu à luz do Alto brilhar sem obstáculos.
+
+---
+
+## Conteúdo Recomendado (Vídeos)
+
+Para aprofundar o estudo sobre a vida de Chico Xavier, selecionamos conteúdos essenciais:
+
+* **[Hilárias e Sábias Lições de Chico Xavier com Carlos Baccelli](https://www.youtube.com/live/kotMQbExGiM?si=P6WTABeaHzhGkTKK)** - Baccelli é médium espírita, fundador do Lar Espírita Pedro e Paulo em Uberaba-MG. É reconhecido como o maior biógrafo de Chico Xavier.
+* **[Dra. Marlene Nobre. A convivência com Chico Xavier](https://youtu.be/1kfuIidocrQ?si=Mf-whv8QMhcGi62B)** - Entrevista realizada no dia 12 de dezembro de 2014.
+* **[Chico Xavier no Programa Pinga-Fogo (Tupi)](https://lec-itatiba.pages.dev/pinga-fogo/)** - O marco histórico da divulgação espírita no Brasil.
 
 ---
 *Este artigo é uma contribuição do **Lar Espírita Cristão - Itatiba (LEC)** para a divulgação doutrinária.*

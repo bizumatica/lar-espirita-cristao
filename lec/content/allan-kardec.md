@@ -6,8 +6,14 @@ weight: 8
 
 Compreender **Allan Kardec** exige ir além da superfície do Codificador. É necessário enxergar o Prof. Hippolyte Léon Denizard Rivail, o pedagogo discípulo de Pestalozzi, cuja estrutura mental permitiu a organização da Doutrina Espírita. Através das lentes de pesquisadores fundamentais como **Silvino Canuto Abreu** e o testemunho de **Geraldo Lemos Neto**, **Carlos Baccelli** e a mediunidade de **Chico Xavier**, mergulhamos na missão que alterou o paradigma espiritual do Ocidente.
 
+![Allan Kardec](/images/kardec.jpg)
+*Legenda: O Codificador.*
+
 ## A Sociedade Parisiense de Estudos Espíritas (SPEE) e o Método
-Fundada em 1º de abril de 1858, a **Sociedade Parisiense de Estudos Espíritas** não era apenas um centro de reuniões, mas um verdadeiro laboratório de pesquisa psíquica. Kardec aplicou ali o método experimental: a observação rigorosa, a comparação de comunicações e o Crivo da Razão. 
+Fundada em 1º de abril de 1858, a **Sociedade Parisiense de Estudos Espíritas** não era apenas um centro de reuniões, mas um verdadeiro laboratório de pesquisa psíquica. Kardec aplicou ali o método experimental: a observação rigorosa, a comparação de comunicações e o Crivo da Razão.
+
+![SPEE](/images/RSaintAnne-m.jpg)
+*Legenda: Passagem à Rua Saint'Anne, sede da SPEE.* 
 
 Deste esforço nasceu o **Pentateuco Kardequiano**, o corpo de cinco obras fundamentais que sustentam o edifício doutrinário:
 1. *O Livro dos Espíritos* (1857)
@@ -38,9 +44,9 @@ Acima de tudo, a missão kardequiana é um mandato cristocêntrico. Kardec foi o
 
 Para aprofundar seu conhecimento com fontes seguras e históricas:
 
-* **[Allan Kardec: O Codificador (Documentário FEBtv)](https://www.youtube.com/watch?v=R6f5B3h1N4o)** - Uma visão biográfica completa da Federação Espírita Brasileira.
-* **[Geraldo Lemos Neto: Os Manuscritos de Allan Kardec](https://www.youtube.com/watch?v=F0mR_4v_37E)** - Palestra detalhando as novas descobertas históricas sobre a obra de Kardec.
-* **[O Pensamento de Canuto Abreu (Cultura Espírita)](https://www.youtube.com/watch?v=FmS3m6qXmsc)** - Estudo sobre o legado do maior pesquisador de Kardec.
+* **[Allan Kardec na Obra de Chico Xavier - Carlos Baccelli (Documentário FEBtv)](https://youtu.be/IMfeYpBtEm8?si=Sg3dSVoL_v-h-wgE)** - 10 princípios básicos da codificação Kardequiana na obra Xavieriana.
+* **[Geraldo Lemos Neto "A volta de Allan Kardec em Chico Xavier"](https://youtu.be/xEoGDmKfeSw?si=8MDSkP8btvOo77AM)** - Chico Xavier é a Reencarnação de Allan Kardec.
+* **[A Missão de Canuto de Abreu.](https://youtu.be/onjTRR8RlAg?si=Dr8vCuJGBSXeFAcY)** - A história do pesquisador que, orientado por cartas de Chico Xavier e Emmanuel, resgatou na França um tesouro: centenas de cartas inéditas de Allan Kardec. Revelado em seu acervo pessoal.
 * **[Pinga-Fogo: Chico Xavier fala sobre a Codificação](https://www.youtube.com/watch?v=P2LshV_yqX4)** - Trechos históricos onde Chico explica a importância da base kardequiana.
 
 ---
