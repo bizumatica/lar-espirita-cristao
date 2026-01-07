@@ -1,17 +1,23 @@
 <footer class="footer">
-	<div class="container footer__container flex">
-		{{ with .Site.Params.footer.copyrightText }}
-		<div class="footer__copyright">
-			&copy; {{ now.Format "2006" }} {{ . }}.
-			<span class="footer__copyright-credits">Gerado com <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a>.</span>
-		</div>
-		{{ end }}
-	</div>
+    <div class="container footer__container flex">
+        {{ with .Site.Params.footer.copyrightText }}
+        <div class="footer__copyright">
+            &copy; {{ now.Format "2006" }} {{ . }}.
+            <span class="footer__copyright-credits">
+                Gerado com <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a>.
+                Código no <a href="https://github.com/bizumatica/lar-espirita-cristao" target="_blank" rel="noopener">GitHub</a>.
+            </span>
+        </div>
+        {{ end }}
+    </div>
 
     <div style="text-align:center; margin-top: 10px; padding-bottom: 20px;">
         <img src="https://visitor-badge.laobi.icu/badge?page_id=julio-studio.lar-espirita&left_text=Visitas&right_color=blue" alt="Contador">
         <p style="font-size: 0.85em; color: #666; margin-top: 5px;">
-            Estúdio <a href="https://github.com/Julio-Studio" target="_blank" style="color: #e22d30; font-weight: bold; text-decoration: none;">Julio-Studio</a>
+            Desenvolvido por <a href="https://juliostudio.dev.br" target="_blank" style="color: #e22d30; font-weight: bold; text-decoration: none;">Julio-Studio</a>
+            <span style="opacity: 0.6; margin-left: 5px;">
+                (<a href="https://gitlab.com/BackInBash/julio-studio" target="_blank" style="color: #666; text-decoration: none;">GitLab</a>)
+            </span>
         </p>
     </div>
 </footer>

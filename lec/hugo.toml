@@ -11,14 +11,14 @@ publishDir = "docs"
   mainSections = ["post"]  # Isso força a listar o conteúdo da pasta 'post' na home
   description = "Evangelho, acolhimento e consolação em Itatiba"
   subtitle = "Fora da Caridade não há Salvação"
-  # O Mainroad usa essa cor vermelha padrão, combina com 'Cristão'
+  # O Mainroad usa essa cor vermelha padrão
   highlightColor = "#e22d30" 
 
   [params.sidebar]
     home = "right"
     list = "right"
     single = "right"
-    # Adicionamos 'agenda_custom' que criaremos abaixo
+    # Adicionei 'agenda_custom' que criei abaixo
     widgets = ["search", "recent", "agenda_custom", "categories"]
 
   [params.footer]
