@@ -2,6 +2,7 @@ baseURL = "https://lecitatiba.com.br/"
 languageCode = "pt-br"
 title = "Lar Espírita Cristão"
 theme = "mainroad"
+publishDir = "docs"
 
 [pagination]
   pagerSize = 5
