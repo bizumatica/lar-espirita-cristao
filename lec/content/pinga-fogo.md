@@ -4,7 +4,7 @@ title: "Pinga Fogo"
 # weight: 4
 ---
 
-# Chico Xavier no Pinga-Fogo (1971): Um Marco Histórico
+### Chico Xavier no Pinga-Fogo (1971): Um Marco Histórico
 
 ![Chico no Pinga-Fogo 1](/images/pinga-um-224x168.jpg)
 
