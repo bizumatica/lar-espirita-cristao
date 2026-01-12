@@ -9,7 +9,7 @@ weight: 2
 ### O Início e a Sede Própria
 A história do **Lar Espírita Cristão** ganha um marco fundamental em **30 de agosto de 1975**, quando **Antonio de Pádua Souza** assume como dirigente. A instituição estabeleceu-se em sede própria, situada à Rua João Fontana, nº 157, no Jardim de Lucca, em Itatiba/SP, com o firme propósito de prestar serviços à comunidade carente.
 
-![Lar Espírita Cristão](/lec/docs/images/foto-fachada.jpg)
+![Lar Espírita Cristão](/images/foto-fachada.jpg)
 
 A sede possui dois pavimentos em um terreno de 250 metros quadrados. Em suas dependências, funciona também o **Albergue Noturno Bom Samaritano**, fundado em **24 de abril de 1981**, ocupando uma área de 420 metros quadrados com capacidade para acolher 15 migrantes diariamente.
 
