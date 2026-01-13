@@ -3,7 +3,7 @@
 .image-container {
     /* Centraliza o bloco todo */
     margin: 20px auto;
-    /* Define a largura máxima da imagem (ajuste conforme desejar) */
+    /* Define a largura máxima da imagem */
     max-width: 450px; 
     /* Faz o container se ajustar ao tamanho da imagem */
     display: block;
