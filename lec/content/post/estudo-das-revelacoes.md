@@ -29,4 +29,3 @@ Assista abaixo ao estudo completo no YouTube:
 *   KARDEC, Allan. *A Gênese, os Milagres e as Predições Segundo o Espiritismo.* (Capítulos VI e VII, sobre a Gênese Espiritual e a Gênese Mosaica).
 *   XAVIER, Francisco Cândido (pelo Espírito André Luiz). *Nosso Lar.* (Capítulos iniciais, sobre a percepção da luz e do ambiente espiritual).
 *   XAVIER, Francisco Cândido (pelo Espírito Emmanuel). *A Caminho da Luz* e *O Consolador.* (Obras que abordam a história do Universo e da espiritualidade sob a perspectiva espírita).
-*   Estudos da FEB - Federação Espírita Brasileira sobre "Ciência e Espiritismo".
