@@ -1,23 +1,125 @@
-/* --- Estilos para Imagens com Legenda (Lec Itatiba) --- */
+/* ==========================================================================
+   1. ESTILO GLOBAL E TIPOGRAFIA
+   ========================================================================== */
+body {
+    background-color: #fff8e7; /* Cosmic Latte */
+    color: #333333;
+}
 
+/* Garante a unidade visual do fundo em todos os containers */
+.wrapper, .main, .container, .list {
+    background-color: #fff8e7 !important;
+}
+
+/* ==========================================================================
+   2. HEADER, LOGO E MENU
+   ========================================================================== */
+
+/* Ajuste do Título do Logo */
+.logo__title {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #333333 !important;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Ajuste da Frase (Tagline) */
+.logo__tagline {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #800000 !important; /* Vinho/Bordô */
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border-top: 1px solid #d2b48c;
+    padding-top: 5px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+/* Estrutura do Menu */
+.menu {
+    background-color: #333333; /* Grafite */
+    border-top: 3px solid #800000 !important; /* Linha Vinho */
+}
+
+/* Item do Menu Ativo (Página Atual) */
+.menu__item--current {
+    background-color: rgba(128, 0, 0, 0.1) !important;
+}
+
+.menu__item--current .menu__link {
+    color: #800000 !important;
+    font-weight: bold;
+}
+
+/* Efeito Hover nos Links do Menu */
+.menu__link:hover {
+    background-color: #4a90e2 !important; /* Azul Sereno */
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   3. CONTEÚDO (LISTAGEM E POSTS)
+   ========================================================================== */
+
+/* Listagem de Posts (Zebrado) */
+.list__item {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.list__item:hover {
+    transform: translateX(5px);
+    background-color: #f5ecd5;
+}
+
+/* Ímpares: Azul */
+.list__item:nth-of-type(odd) {
+    background-color: #fcf1d2; 
+    border-left: 6px solid #4a90e2;
+}
+
+/* Pares: Verde */
+.list__item:nth-child(even), 
+.list__item:nth-of-type(2n) {
+    background-color: #fff8e7;
+    border-left: 6px solid #86ad5c !important;
+    display: block;
+}
+
+.list__title {
+    color: #5d4037;
+}
+
+/* Post Completo (Página Única) */
+.post {
+    background-color: #fcf1d2;
+    padding: 30px;
+    border-left: 8px solid #4a90e2;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Imagens com Legenda */
 .image-container {
-    /* Centraliza o bloco todo */
     margin: 20px auto;
-    /* Define a largura máxima da imagem */
     max-width: 450px; 
-    /* Faz o container se ajustar ao tamanho da imagem */
     display: block;
     text-align: center;
 }
 
 .image-container img {
-    /* Garante que a imagem não ultrapasse o container */
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Centraliza a imagem dentro do container */
+    margin: 0 auto;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra leve para elegância */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .image-caption {
@@ -26,6 +128,95 @@
     font-style: italic;
     font-size: 0.95rem;
     color: #555;
-    text-align: center; /* Centraliza o texto da legenda */
     line-height: 1.4;
+}
+
+/* ==========================================================================
+   4. SIDEBAR (WIDGETS)
+   ========================================================================== */
+
+.widget {
+    background-color: #fcf1d2 !important;
+    border-radius: 4px;
+    padding: 15px;
+    border-top: 4px solid #800000 !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.widget__title {
+    color: #333333 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d2b48c;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Agenda */
+.widget-agenda p {
+    margin-bottom: 12px;
+    line-height: 1.4;
+    border-left: 3px solid #4a90e2;
+    padding-left: 10px;
+}
+
+.widget-agenda a, .agenda-link-detail {
+    color: #800000 !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.widget-agenda a:hover {
+    color: #4a90e2 !important;
+    text-decoration: underline;
+}
+
+/* Mapa */
+.widget-mapa iframe {
+    border-radius: 4px;
+    border: 1px solid #d2b48c !important;
+    filter: grayscale(0.2) sepia(0.1);
+}
+
+/* ==========================================================================
+   5. RODAPÉ (FOOTER)
+   ======================================================================== */
+
+.footer {
+    background-color: #2c2c2c !important;
+    color: #b0b0b0 !important;
+    padding: 20px 0 !important; 
+    text-align: center !important;
+    line-height: 1.2 !important;
+}
+
+.footer .container, 
+.footer__copyright {
+    background-color: transparent !important;
+    margin: 0 auto 5px auto !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* Contador e Créditos */
+.footer center, .footer div {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+.footer a {
+    color: #999999 !important;
+    text-decoration: none;
+}
+
+.footer a[href*="julio-studio"] {
+    display: inline-block;
+    margin-top: 10px !important;
+    font-size: 0.75em !important;
+    opacity: 0.5;
+}
+
+.footer a:hover {
+    color: #4a90e2 !important;
 }
