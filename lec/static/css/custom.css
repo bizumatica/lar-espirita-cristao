@@ -220,3 +220,42 @@ body {
 .footer a:hover {
     color: #4a90e2 !important;
 }
+
+/* Ajustes para o Menu Mobile no Hugo Mainroad */
+@media screen and (max-width: 768px) {
+    /* 1. Transforma a barra "vazia" em um botão centralizado e elegante */
+    .menu-toggle {
+        display: block;
+        width: 100%;       /* Ocupa a largura total */
+        background: #2a2a2a; /* Um tom de cinza mais suave ou use #8b0000 para vermelho */
+        color: #fff;
+        text-align: center;
+        padding: 12px 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-bottom: 3px solid #8b0000; /* Linha vermelha para combinar com a logo */
+    }
+
+    /* 2. Adiciona o ícone de hambúrguer (três linhas) ao lado da palavra MENU */
+    .menu-toggle::before {
+        content: '☰ '; /* Ícone simples de texto ou use um SVG se preferir */
+        margin-right: 8px;
+        font-size: 1.2rem;
+        vertical-align: middle;
+    }
+
+    /* 3. Melhora o visual da lista quando o menu está aberto */
+    .menu__list {
+        background-color: #333;
+        text-align: center; /* Centraliza os itens para facilitar o clique com o polegar */
+    }
+
+    .menu__item {
+        border-bottom: 1px solid #444;
+    }
+
+    .menu__link {
+        padding: 15px !important;
+        display: block;
+    }
+}
