@@ -13,7 +13,6 @@ Francisco Cândido Xavier não foi apenas um médium; foi um fenômeno de renún
 Segundo os relatos de seus biógrafos e amigos próximos, a mediunidade de Chico não era um simples dom, mas um **mandato de missão**. Desde o encontro com Emmanuel em 1931, a diretriz foi clara: *Disciplina, Disciplina e Disciplina.*
 
 ![Chico Xavier Psicografando](/images/Francico_Candido_Xavier.jpg)
-*Legenda: Chico Xavier em momento de serviço, exemplificando o mandato recebido.*
 
 Chico abdicou de vida privada, posses e descanso para servir de ponte entre dois mundos. Ele psicografou mais de 500 livros, cujos direitos autorais foram integralmente doados a instituições de caridade, reafirmando seu desapego absoluto e caráter ilibado.
 
@@ -32,7 +31,6 @@ Geraldo Lemos Neto, fundador da [Vinha de Luz](https://vinhadeluz.com.br), desta
 Chico não pregava o Evangelho; ele o vivia. Sua existência era uma extensão das bem-aventuranças. Mesmo sob calúnias ou perseguições, sua resposta era o silêncio respeitoso ou a prece. Ele consolidou o "Espiritismo Prático", onde o conhecimento doutrinário se traduzia em amparo aos necessitados e consolo às famílias enlutadas.
 
 ![Chico Xavier e o Povo](/images/chico-xavierlar-caridade-.jpg)
-*Legenda: A caridade silenciosa e o vínculo direto com os mais necessitados.*
 
 ## Conclusão
 
