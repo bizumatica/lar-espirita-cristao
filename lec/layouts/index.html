@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main class="main list" role="main">
+    <div class="content main__content clearfix" style="margin-bottom: 20px; padding: 15px; background: #f9f9f9; border-left: 5px solid #28a745; border-radius: 4px;">
+        <h2 id="saudacao" style="margin: 0; color: #333;">Olá!</h2>
+        <p style="margin: 5px 0 0; color: #666;">Muita Paz! Bem-vindo(a) ao Lar Espírita Cristão.</p>
+    </div>
+
+    <script>
+        function atualizarSaudacao() {
+            const hora = new Date().getHours();
+            let msg = "";
+            if (hora >= 5 && hora < 12) msg = "Bom dia!";
+            else if (hora >= 12 && hora < 18) msg = "Boa tarde!";
+            else msg = "Boa noite!";
+            document.getElementById("saudacao").innerText = msg;
+        }
+        atualizarSaudacao();
+    </script>
+
+    {{- $pages := where .Site.RegularPages "Section" "post" -}}
+    {{- $paginator := .Paginate $pages 2 -}}
+    
+    {{- range $paginator.Pages }}
+        {{ .Render "summary" }}
+    {{- end }}
+
+    {{ partial "pagination.html" . }}
+</main>
+{{ end }}
