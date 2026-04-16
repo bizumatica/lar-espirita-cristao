@@ -8,45 +8,69 @@ publishDir = "docs"
   pagerSize = 5
 
 [params]
-  mainSections = ["post"]
+  # CRUCIAL: Agora o Hugo busca posts em TODAS as seções para a Home
+  mainSections = ["clube-do-livro-espirita", "allan-kardec", "chico-xavier", "jesus", "pinga-fogo", "historia", "estudos"]
+  home_posts_limit = 10
+  
   description = "Evangelho, acolhimento e consolação em Itatiba"
   subtitle = "Fora da Caridade não há Salvação"
   highlightColor = "#e22d30"
   customCSS = ["css/custom.css"]
   favicon = "favicon.ico" 
   
-  # Configurações para o player ao vivo (YouTube)
   youtubeChannelID = "UCW7NoMwjuc5tdLgPhjShlIQ"
-  
-  # ID do Spotify (Conta no Spotify for Podcasters)
   spotifyShowID = "06cqVyhjydGRHPlnGw8AxD"
 
   [params.sidebar]
     home = "right"
     list = "right"
     single = "right"
-    # Adicionei 'live_audio' e 'spotify' na ordem lógica:
     widgets = ["search", "live_audio", "recent", "agenda_custom", "spotify", "mapa_custom", "categories"]
 
   [params.footer]
     copyrightText = "Lar Espírita Cristão"
 
+# --- CONFIGURAÇÃO DO MENU SUPERIOR ---
+
 [[menu.main]]
   name = "Início"
   url = "/"
-  weight = 1
-
-# [[menu.main]]
-# name = "História"
-# url = "/historia/"
-# weight = 2
-
-# removi o agenda
+  weight = 10
 
 [[menu.main]]
-  name = "Pinga-Fogo"
-  url = "/pinga-fogo/"
-  weight = 4
+  name = "História"
+  url = "/historia/"
+  weight = 20
+
+[[menu.main]]
+  name = "Agenda"
+  url = "/agenda/"
+  weight = 30
+
+[[menu.main]]
+  name = "Chico Xavier"
+  url = "/chico-xavier/"
+  weight = 50
+
+[[menu.main]]
+  name = "Allan Kardec"
+  url = "/allan-kardec/"
+  weight = 60
+
+[[menu.main]]
+  name = "Clube do Livro"
+  url = "/clube-do-livro-espirita/"
+  weight = 70
+
+[[menu.main]]
+  name = "Estudos Espíritas"
+  url = "/estudos/"
+  weight = 75
+
+[[menu.main]]
+  name = "Jesus"
+  url = "/jesus/"
+  weight = 80
 
 [markup]
   [markup.goldmark]

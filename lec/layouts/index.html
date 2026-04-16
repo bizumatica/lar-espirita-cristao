@@ -17,7 +17,9 @@
         atualizarSaudacao();
     </script>
 
-    {{- $pages := where .Site.RegularPages "Section" "post" -}}
+    {{- $mainSections := .Site.Params.mainSections | default (slice "post") -}}
+    {{- $pages := where .Site.RegularPages "Section" "in" $mainSections -}}
+    
     {{- $paginator := .Paginate $pages 2 -}}
     
     {{- range $paginator.Pages }}
