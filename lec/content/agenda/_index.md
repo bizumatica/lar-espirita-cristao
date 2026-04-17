@@ -1,8 +1,6 @@
 ---
 title: "Agenda"
-menu:
-  main:
-    weight: 30
+weight: 30
 ---
 
 🕊️ **Muita Paz!** Compartilhamos com alegria os horários das atividades em nossas casas para que você possa se programar e participar conosco.

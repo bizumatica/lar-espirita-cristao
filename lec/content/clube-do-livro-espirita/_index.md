@@ -2,9 +2,7 @@
 title: "Clube do Livro"
 description: "Clube de litura e estudos apofundados da Doutrina"
 date: 2024-03-21
-menu:
-  main:
-    weight: 70
+weight: 70
 ---
 
 

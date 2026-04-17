@@ -2,12 +2,10 @@
 title: "História"
 description: "História do Lar Espírita Cristão e da Casa do Pão Chico Xavier"
 date: 2024-03-21
-menu:
-  main:
-    weight: 20
+weight: 20
 ---
 
-### Esta seção é dedicada ao registro e lembrança dos nossos queridos irmãos pioneiros da nossa Casa de Oração.
+#### _Esta seção é dedicada ao registro e lembrança dos nossos queridos irmãos pioneiros da nossa Casa de Oração._
 
 ### O Início e a Sede Própria
 A história do **Lar Espírita Cristão** ganha um marco fundamental em **30 de agosto de 1975**, quando **Antonio de Pádua Souza** assume como dirigente. A instituição estabeleceu-se em sede própria, situada à Rua João Fontana, nº 157, no Jardim de Lucca, em Itatiba/SP, com o firme propósito de prestar serviços à comunidade carente.

@@ -1,6 +1,5 @@
 ---
 title: "Jesus"
-menu: "main"
 weight: 80
 ---
 
