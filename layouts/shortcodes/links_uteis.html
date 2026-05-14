@@ -1,0 +1,10 @@
+<div class="links-uteis">
+    <h3>Links Úteis e Parceiros:</h3>
+    <ul>
+        {{ range .Site.Data.parceiros.links }}
+        <li>
+            <strong><a href="{{ .url }}" target="_blank" rel="noopener">{{ .nome }}</a></strong>
+        </li>
+        {{ end }}
+    </ul>
+</div>
