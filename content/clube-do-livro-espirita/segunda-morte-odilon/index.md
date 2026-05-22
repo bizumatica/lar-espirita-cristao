@@ -3,13 +3,14 @@ title: "A 2ª Morte de Odilon"
 date: 2026-02-19T08:00:00-03:00
 draft: false
 type: "post"
+image: "segundamorteodilon.webp"
 ---
 
 ### Clube do Livro Espírita Padrinhos do Dr. Inácio Inácio Ferreira
 
 #### 📖 Livro do Mês
 
-![A 2ª Morte de Odilon](segundamorteodilon.webp)
+{{< foto src="segundamorteodilon.webp" alt="Capa do livro A 2ª Morte de Odilon" legenda="A segunda morte de Odilon." >}}
 
 **Resenha:**
 

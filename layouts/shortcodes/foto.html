@@ -1,0 +1,72 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "Imagem do artigo" -}}
+{{- $legenda := .Get "legenda" -}}
+
+{{- $width := "" -}}
+{{- $height := "" -}}
+{{- $finalSrc := "" -}}
+
+{{- /* Captura robusta no Leaf Bundle */ -}}
+{{- $pageImg := .Page.Resources.Get $src -}}
+
+{{- if $pageImg -}}
+    {{- $finalSrc = $pageImg.RelPermalink -}}
+    {{- $width = string $pageImg.Width -}}
+    {{- $height = string $pageImg.Height -}}
+{{- else -}}
+    {{- $assetImg := resources.Get $src -}}
+    {{- if $assetImg -}}
+        {{- $finalSrc = $assetImg.RelPermalink -}}
+        {{- $width = string $assetImg.Width -}}
+        {{- $height = string $assetImg.Height -}}
+    {{- else -}}
+        {{- $finalSrc = $src | relURL -}}
+        {{- $width = .Get "width" | default "800" -}}
+        {{- $height = .Get "height" | default "500" -}}
+    {{- end -}}
+{{- end -}}
+
+<figure class="artigo-container my-8 w-full flex flex-col items-center justify-center text-center clear-both">
+  <div class="inline-block relative mx-auto text-center">
+    <img 
+      src="{{ $finalSrc }}" 
+      alt="{{ $alt }}" 
+      width="{{ $width }}"
+      height="{{ $height }}"
+      loading="lazy" 
+      decoding="async"
+      class="artigo-img shadow-md border-2 border-[#800000] bg-[#FCF1D2] p-1.5 block mx-auto transition-transform duration-300 hover:scale-[1.01]"
+    />
+  </div>
+  {{- if $legenda -}}
+    <figcaption class="artigo-caption mt-3 text-[0.95rem] text-[#4a4a4a] italic mx-auto block w-full text-center">
+      {{ $legenda }}
+    </figcaption>
+  {{- end -}}
+</figure>
+
+<style>
+  /* Override de alta especificidade para anular mutações estruturais do Mainroad */
+  .artigo-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    float: none !important;
+    clear: both !important;
+    width: 100% !important;
+  }
+  .artigo-img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+  }
+  .artigo-caption {
+    font-style: italic !important;
+    text-align: center !important;
+    display: block !important;
+  }
+</style>
