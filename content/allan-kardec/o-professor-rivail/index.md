@@ -5,7 +5,7 @@ type: "post"
 
 O Professor **Hippolyte Léon Denizard Rivail**, antes de assinar como Allan Kardec, foi um dos maiores expoentes da pedagogia francesa no século XIX. Sua estrutura mental, forjada no rigor científico e na educação humanista, foi o instrumento preciso escolhido pela Espiritualidade Superior para a Codificação.
 
-![Hippolyte Léon Denizard Rivail.](kardec2.webp)
+{{< foto src="kardec2.webp" alt="Hippolyte Léon Denizard Rivail." legenda="Hippolyte Léon Denizard Rivail." >}}
 
 ## A Escola de Pestalozzi e o Método Intuitivo
 

@@ -10,13 +10,13 @@ Ao estudar a Doutrina Espirita devemos buscar compreender os ensinamentos dos no
 
 Se procurarmos interpretar buscando a essência dos ensinamentos estaremos compreendendo melhor as Leis de Deus que regem a vida.
 
+{{< foto src="evang.webp" alt="O Evangelho" legenda="O Evangelho." >}}
+
 Vivemos em um mundo de prova e expiações onde a mentira e ideologias mais estranhas criadas pela humanidade se apresentam com objetivo de aprendermos a discernir entre o bem e o mal.
 
 Muitas dessas ideias são revestidas com aparência que podem ludibriar nossos sentimentos induzindo nosso entendimento ao erro, e trazem na sua essência o veneno do egoísmo, gerada por mentes ciosas, prepotentes, de forma que tentam cooptar pessoas através de ideologias, sequestrando-as para depois escraviza-las e assim tentam burlar as Leis Divinas que tem como objetivo o crescimento da criatura através do trabalho digno dando a cada um conforme suas obras.
 
 A Doutrina Espírita na sua essência mais pura é Jesus, Kardec, Chico Xavier onde encontramos os ensinamentos que são as diretrizes para nossa evolução e na medida que melhor entendemos e vivenciarmos os ensinamentos, a vida seguira sem tantos percalços.  
-
-![O Evangelho](evang.webp)
 
 Vejamos as informações dos espíritos no Evangelho Segundo O Espiritismo edição EDICEL no item Explicações: 
 
@@ -72,6 +72,8 @@ Interessante observar que pela prática da caridade que é uma lei Divina, Deus 
 # Conclusão
 O Espiritismo, conforme codificado por Allan Kardec, se propõe a ser uma doutrina moral e filosófica, não um projeto político. Ainda assim, é possível apontar pontos de aproximação e de divergência entre o pensamento espírita e o comunismo, no plano dos valores, sem confundi-los.
 
+{{< foto src="cum-soc.webp" alt="Materialismo e Opressão" legenda="Materialismo e Opressão." >}}
+
 **Pontos de possível concordância (parcial)**
 1. **Igualdade essencial dos seres humanos**
 O Espiritismo ensina que todos os Espíritos são criados iguais, ou seja, simples e ignorantes e evoluem ao longo do tempo.
@@ -93,8 +95,6 @@ O Espiritismo afirma que a riqueza é uma prova e gera deveres morais, como:
 • O comunismo clássico (especialmente o marxista) é materialista e geralmente ateu.
 • O Espiritismo é espiritualista, baseia-se na imortalidade da alma e na vida futura.
 Isso é uma divergência fundamental.
-
-![Materialismo e Opressão](cum-soc.webp)
 
 5. **Coerção versus transformação moral**
 • Comunismo: busca igualdade por meio de estrutura estatal e imposição coletiva

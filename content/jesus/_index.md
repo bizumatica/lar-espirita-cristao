@@ -10,7 +10,7 @@ Carta do Senador Públio Lentulus ao Imperador Tibério Cézar, descrevendo as c
 
 “Sabendo que desejas conhecer quanto vou narrar, existindo nos nossos tempos um homem,o qual vive atualmente de grandes virtudes, chamado Jesus, que pelo povo é inculcado o profeta da verdade, e os seus discípulos dizem que é filho de Deus, criador do céu e da terra e de todas as coisas que nela se acham e que nela tenham estado; em verdade, ó César, cada dia se ouvem coisas maravilhosas desse Jesus: ressuscita os mortos, cura os enfermos, em uma só palavra: é um homem de justa estatura e é muito belo no aspecto, e há tanta majestade no rosto, que aqueles que o vêem são forçados a amá-lo ou temê-lo. Tem os cabelos da cor amêndoa bem madura, são distendidos até as orelhas, e das orelhas até as espáduas, são da cor da terra, porém mais reluzentes.
 
-![**Jesus**, segundo Públio Lentulus (Emmanuel)](Jesus2.webp)
+{{< foto src="Jesus2.webp" alt="O Mestre Jesus" legenda="Jesus, segundo Públio Lentulus (Emmanuel)." >}}
 
 Tem no meio de sua fronte uma linha separando os cabelos, na forma em uso nos nazarenos, o seu rosto é cheio, o aspecto é muito sereno, nenhuma ruga ou mancha se vê em sua face, de uma cor moderada; o nariz e a boca são irrepreensíveis. A barba é espessa, mas semelhante aos cabelos, não muito longa, mas separada pelo meio, seu olhar é muito afetuoso e grave; tem os olhos expressivos e claros, o que surpreende é que resplandecem no seu rosto como os raios do sol, porém ninguém pode olhar fixo o seu semblante, porque quando resplende, apavora, e quando ameniza, faz chorar; faz-se amar e é alegre com gravidade.
 
@@ -18,7 +18,7 @@ Diz-se que nunca ninguém o viu rir, mas, antes, chorar. Tem os braços e as mã
 
 Diz-se que este Jesus nunca fez mal a quem quer que seja, mas, ao contrário, aqueles eu o conhecem e com ele têm praticado, afirmam ter dele recebido grandes benefícios e saúde, porém à tua obediência estou prontíssimo, aquilo que Tua Majestade ordenar será cumprido. Vale, da Majestade Tua, fidelíssimo e obrigadíssimo… Públio Lentulus, presidente da Judéia Lindizione setima, luna seconda.”
 
-![Emmanuel / Públio Lentulus](emmanuel.webp)
+{{< foto src="emmanuel.webp" alt="Emmanuel / Públio Lentulus" legenda="Emmanuel / Públio Lentulus" >}}
 
 (Este documento foi encontrado no arquivo do Duque de Cesadini, em Roma. Essa carta, onde se faz o retrato físico e moral de Jesus, foi mandada de Jerusalém ao imperador Tibério César, em Roma, ao tempo de Jesus.)
 

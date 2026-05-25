@@ -5,12 +5,12 @@ type: "post"
 
 Compreender **Allan Kardec** exige ir além da superfície do Codificador. É necessário enxergar o Professor Hippolyte Léon Denizard Rivail, o pedagogo discípulo de Pestalozzi, cuja estrutura mental permitiu a organização da Doutrina Espírita. Através das lentes de pesquisadores fundamentais como **Silvino Canuto Abreu** e o testemunho de **Geraldo Lemos Neto**, **Carlos Baccelli** e a mediunidade de **Chico Xavier**, mergulhamos na missão que alterou o paradigma espiritual do Ocidente.
 
-![Allan Kardec, o Codificador.](kardec.webp)
+{{< foto src="kardec.webp" alt="Allan Kardec" legenda="Allan Kardec, o Codificador." >}}
 
 ## A Sociedade Parisiense de Estudos Espíritas (SPEE) e o Método
 Fundada em 1º de abril de 1858, a **Sociedade Parisiense de Estudos Espíritas** não era apenas um centro de reuniões, mas um verdadeiro laboratório de pesquisa psíquica. Kardec aplicou ali o método experimental: a observação rigorosa, a comparação de comunicações e o Crivo da Razão.
 
-![Passagem à Rua Saint'Anne, sede da SPEE](RSaintAnne-m.webp)
+{{< foto src="RSaintAnne-m.webp" alt="Sociedade Parisiense de Estudos Espíritas" legenda="Passagem à Rua Saint'Anne, sede da SPEE" >}}
 
 Deste esforço nasceu o **Pentateuco Kardequiano**, o corpo de cinco obras fundamentais que sustentam o edifício doutrinário:
 1. *O Livro dos Espíritos* (1857)
