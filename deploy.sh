@@ -1,60 +1,54 @@
 #!/bin/bash
 
 # Author: Julio Prata
-# Version: 1.7
-# Description: Script de deploy resiliente para projetos Hugo localizados na raiz do repositório
+# Version: 2.1 (Double-Validated & Streamlined)
+# Description: Orquestrador GitOps para Cloudflare Pages (Otimizado para Leaf Bundles)
 
-# Cores para feedback no terminal (ANSI)
 GREEN='\033[0;32m'
 CYAN='\033[0;36m'
 YELLOW='\033[0;33m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-echo -e "${CYAN}--- Inicializando Validações de Ambiente ---${NC}"
+echo -e "${CYAN}--- Inicializando Validações de Ambiente e GitOps ---${NC}"
 
-# 1. GUARDRAIL: Valida se o script está sendo executado na raiz correta do projeto Hugo
-if [ ! -f "hugo.toml" ] && [ ! -f "config.toml" ] && [ ! -f "config.yaml" ]; then
-    echo -e "${RED}[-][ERRO] Arquivo de configuração do Hugo não encontrado na raiz.${NC}"
-    echo -e "${RED}Certifique-se de executar este script no mesmo diretório onde fica o seu hugo.toml.${NC}"
+# 1. GUARDRAIL: Validação estrita da raiz do projeto para evitar execuções órfãs
+if [ ! -f "hugo.toml" ]; then
+    echo -e "${RED}[-][ERRO] hugo.toml não encontrado na raiz do repositório.${NC}"
+    echo -e "${RED}Execute este script a partir da raiz do projeto Hugo.${NC}"
     exit 1
 fi
 
-# 2. SANITY CHECK: Verifica se o binário do Hugo está acessível
-if ! command -v hugo &> /dev/null; then
-    echo -e "${RED}[-][ERRO] O binário 'hugo' não está instalado ou não está no seu PATH.${NC}"
-    exit 1
+# 2. HOUSEKEEPING: Expurgando travas de concorrência e lixo de compilação legado
+rm -f .hugo_build_lock
+if [ -d "docs" ]; then
+    echo -e "${YELLOW}[!] Pasta legada /docs detectada no HD. Removendo do rastreamento do Git...${NC}"
+    git rm -r --cached docs &> /dev/null
+    rm -rf docs
+    echo -e "${GREEN}[+] Histórico despoluído com sucesso.${NC}"
 fi
 
-echo -e "${GREEN}[+] Ambiente e estrutura de raiz validados com sucesso.${NC}"
-echo -e "${CYAN}--- Iniciando Pipeline de Compilação Estática ---${NC}"
+echo -e "${GREEN}[+] Ambiente limpo e pronto para sincronização dos Leaf Bundles.${NC}"
+echo -e "${CYAN}--- Sincronizando Fontes com a Cloudflare Pages ---${NC}"
 
-echo -e "${CYAN}[->] Expurgando caches locais e gerando build limpo em /docs...${NC}"
-# Remove locks e caches do Hugo Pipes para forçar o re-processamento correto dos Leaf Bundles e Favicons
-rm -rf resources/_gen/ .hugo_build_lock
-
-# 3. GERAR O SITE (Saída direcionada para a pasta 'docs' na raiz)
-if hugo --gc --minify --cleanDestinationDir -d docs; then
-    echo -e "${GREEN}--> Build concluído com sucesso na pasta /docs!${NC}"
-else
-    echo -e "${RED}--> [ERRO] Falha crítica na compilação do Hugo.${NC}"
-    exit 1
-fi
-
-echo -e "${CYAN}--- Sincronizando Alterações com o GitHub ---${NC}"
-
-# 4. ORQUESTRAÇÃO DO GIT: Executa tudo no mesmo diretório de forma segura
+# 3. INDEXAÇÃO ATÔMICA DO GIT
 git add .
 
-# Previne falha ou commits vazios caso o build não tenha gerado modificações reais de código
+# Verifica mutações reais no código-fonte para evitar commits nulos
 if git diff-index --quiet HEAD --; then
-    echo -e "${YELLOW}[!] Sem alterações detectadas. O repositório já está em sincronia.${NC}"
+    echo -e "${YELLOW}[!] Sem alterações detectadas nos arquivos-fonte. O repositório já está em sincronia.${NC}"
 else
-    msg="Update $(date +'%d/%m/%Y %H:%M')"
-    [ $# -eq 1 ] && msg="$1"
+    # Mensagem padrão caso nenhuma seja passada por parâmetro
+    msg="feat: nova postagem (leaf bundle) e atualização de infra"
+    
+    # OTIMIZAÇÃO: Captura todos os argumentos passados, eliminando a obrigatoriedade de aspas
+    [ $# -gt 0 ] && msg="$*"
 
     echo -e "${CYAN}[->] Executando commit semântico...${NC}"
     git commit -m "$msg"
+    
+    echo -e "${CYAN}[->] Disparando gatilho de build remoto na Cloudflare...${NC}"
     git push origin main
-    echo -e "${GREEN}--- Deploy concluído com sucesso! Verifique o Cloudflare em 1 min. ---${NC}"
+    
+    echo -e "${GREEN}--- Código enviado! A Cloudflare Pages iniciou a compilação e o Pagefind está indexando seu site. ---${NC}"
 fi

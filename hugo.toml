@@ -2,7 +2,7 @@ baseURL = "https://lecitatiba.com.br/"
 languageCode = "pt-br"
 title = "Lar Espírita Cristão"
 theme = "mainroad"
-publishDir = "docs"
+# publishDir = "docs" (modificado para o pdrão pulic)
 defaultContentLanguage = 'pt-br'
 
 [pagination]

@@ -1,5 +1,11 @@
+# Outputs de compilação (Gerados dinamicamente na nuvem)
 public/
 resources/
-.hugo_build.lock
+docs/
+
+# Trava de concorrência do Hugo (Sintaxe corrigida)
+.hugo_build_lock
+
+# Arquivos de sistema e feeds locais
 *.xml
 .DS_Store
