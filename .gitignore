@@ -5,6 +5,7 @@ docs/
 
 # Trava de concorrência do Hugo (Sintaxe corrigida)
 .hugo_build_lock
+.hugo_build.lock
 
 # Arquivos de sistema e feeds locais
 *.xml

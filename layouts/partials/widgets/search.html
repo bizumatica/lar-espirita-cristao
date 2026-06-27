@@ -1,0 +1,56 @@
+<div class="widget-search widget" aria-label="Pesquisa interna">
+    <h4 class="widget__title">Busca</h4>
+    
+    <div id="search"></div>
+    
+    <style>
+        :root {
+            --pagefind-ui-scale: 0.85; /* Escala reduzida para encaixar melhor em sidebars */
+            --pagefind-ui-primary: #e22d30; /* Cor primária do tema (borda em foco/botões) */
+            --pagefind-ui-text: #333333;
+            --pagefind-ui-background: #ffffff;
+            --pagefind-ui-border: #e0e0e0;
+            --pagefind-ui-border-width: 1px;
+            --pagefind-ui-border-radius: 4px;
+            --pagefind-ui-font: inherit; /* Herda a tipografia global do site */
+        }
+        /* Previne transbordo do campo de busca na lateral */
+        .pagefind-ui__form { max-width: 100%; }
+        .pagefind-ui__search-input { font-weight: normal !important; }
+    </style>
+    
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    
+    <script src="/pagefind/pagefind-ui.js" defer></script>
+    
+    <script>
+        // Aguarda a árvore DOM estar totalmente construída
+        window.addEventListener('DOMContentLoaded', () => {
+            // 3. RESILIÊNCIA (Try/Catch)
+            // Impede que a página quebre caso o script falhe por bloqueadores de anúncio ou erro de rede
+            try {
+                new PagefindUI({ 
+                    element: "#search", 
+                    showImages: false,
+                    showEmptyFilters: false, // Oculta painéis vazios desnecessários
+                    resetStyles: false,
+                    translations: {
+                        placeholder: "Pesquisar no site...",
+                        clear_search: "Limpar",
+                        load_more: "Carregar mais",
+                        search_label: "Buscar",
+                        filters_label: "Filtros",
+                        zero_results: "Nenhum resultado para '[searchTerm]'",
+                        many_results: "[count] resultados para '[searchTerm]'",
+                        one_result: "1 resultado para '[searchTerm]'",
+                        alt_search: "Nada para '[searchTerm]'. Mostrando resultados para '[suggestedTerm]'.",
+                        search_suggestion: "Nenhum resultado para '[searchTerm]'. Tente:",
+                        searching: "Buscando '[searchTerm]'..."
+                    }
+                });
+            } catch (error) {
+                console.warn("[Pagefind] Motor de busca indisponível no momento.", error);
+            }
+        });
+    </script>
+</div>
