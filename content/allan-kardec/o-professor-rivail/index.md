@@ -1,6 +1,9 @@
 ---
 title: "O Professor Rivail"
+date: 2026-01-25T08:00:00-03:00
+draft: false
 type: "post"
+summary: "Conheça a trajetória pedagógica de Hippolyte Léon Denizard Rivail, o discípulo de Pestalozzi cujo rigor científico e humanista preparou as bases para a Codificação Espírita."
 ---
 
 O Professor **Hippolyte Léon Denizard Rivail**, antes de assinar como Allan Kardec, foi um dos maiores expoentes da pedagogia francesa no século XIX. Sua estrutura mental, forjada no rigor científico e na educação humanista, foi o instrumento preciso escolhido pela Espiritualidade Superior para a Codificação.
@@ -40,8 +43,12 @@ A transição do Professor para o Codificador não foi uma ruptura, mas uma cont
 | :--- | :--- | :--- |
 | 1828 | *Plan proposé pour l’amélioration de l’instruction publique* | Tese premiada pela Academia Real de Arras sobre a reforma do ensino. |
 | 1831 | *Grammaire française classique* | Obra que uniu a lógica do raciocínio ao ensino da língua. |
-| 1846 | *Manuel des examens pour les brevets de capacité* | Guia técnico essencial para a formação de novos professores na França. |
+| 1846 | *Manuel des examens pour les brevets de capacidade* | Guia técnico essencial para a formação de novos professores na França. |
 
 ---
 
 *Este artigo é uma contribuição do **Lar Espírita Cristão - Itatiba (LEC)** para a valorização da memória histórica e o estudo sério da obra de Allan Kardec.*
+
+---
+
+{{< links_uteis >}}

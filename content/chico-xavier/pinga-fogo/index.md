@@ -2,6 +2,7 @@
 title: "Pinga Fogo"
 date: 2026-01-25T08:00:00-03:00
 draft: false
+summary: "Relembre as históricas participações de Chico Xavier no programa Pinga-Fogo da TV Tupi em 1971, respondendo a perguntas profundas à luz do Espiritismo."
 ---
 
 ### Chico Xavier no Pinga-Fogo (1971): Um Marco Histórico

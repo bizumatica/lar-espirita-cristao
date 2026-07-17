@@ -3,7 +3,7 @@ title: "A 2ª Morte de Odilon"
 date: 2026-02-19T08:00:00-03:00
 draft: false
 type: "post"
-image: "segundamorteodilon.webp"
+summary: "Eis o relato do emocionante desenlace do grande amigo e benfeitor, Odilon Fernandes. Obra indicada como o Livro do Mês no Clube do Livro Espírita."
 ---
 
 ### Clube do Livro Espírita Padrinhos do Dr. Inácio Inácio Ferreira

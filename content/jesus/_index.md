@@ -1,5 +1,7 @@
 ---
 title: "Jesus"
+description: "A célebre carta de Públio Lentulus ao Imperador Tibério César, descrevendo os aspectos físicos e morais do Mestre Jesus sob a ótica histórica e espírita."
+date: 2026-07-17
 weight: 80
 ---
 
@@ -8,7 +10,7 @@ weight: 80
 
 Carta do Senador Públio Lentulus ao Imperador Tibério Cézar, descrevendo as características morais e físicas de Jesus.
 
-“Sabendo que desejas conhecer quanto vou narrar, existindo nos nossos tempos um homem,o qual vive atualmente de grandes virtudes, chamado Jesus, que pelo povo é inculcado o profeta da verdade, e os seus discípulos dizem que é filho de Deus, criador do céu e da terra e de todas as coisas que nela se acham e que nela tenham estado; em verdade, ó César, cada dia se ouvem coisas maravilhosas desse Jesus: ressuscita os mortos, cura os enfermos, em uma só palavra: é um homem de justa estatura e é muito belo no aspecto, e há tanta majestade no rosto, que aqueles que o vêem são forçados a amá-lo ou temê-lo. Tem os cabelos da cor amêndoa bem madura, são distendidos até as orelhas, e das orelhas até as espáduas, são da cor da terra, porém mais reluzentes.
+“Sabendo que desejas conhecer quanto vou narrar, existindo nos nossos tempos um homem,o qual vive atualmente de grandes virtudes, chamado Jesus, que pelo povo é inculcado o profeta da verdade, e os seus discípulos dizem que é filho de Deus, criador do céu e da terra e de todas as coisas que nela se acham e que nela tenham estado; in verdade, ó César, cada dia se ouvem coisas maravilhosas desse Jesus: ressuscita os mortos, cura os enfermos, em uma só palavra: é um homem de justa estatura e é muito belo no aspecto, e há tanta majestade no rosto, que aqueles que o vêem são forçados a amá-lo ou temê-lo. Tem os cabelos da cor amêndoa bem madura, são distendidos até as orelhas, e das orelhas até as espáduas, são da cor da terra, porém mais reluzentes.
 
 {{< foto src="Jesus2.webp" alt="O Mestre Jesus" legenda="Jesus, segundo Públio Lentulus (Emmanuel)." >}}
 
@@ -26,3 +28,5 @@ Diz-se que este Jesus nunca fez mal a quem quer que seja, mas, ao contrário, aq
 ---
 
 *Este artigo é uma contribuição do **Lar Espírita Cristão - Itatiba (LEC)** para a divulgação doutrinária.*
+
+---

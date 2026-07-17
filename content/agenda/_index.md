@@ -1,9 +1,11 @@
 ---
 title: "Agenda"
+description: "Confira os horários das Reuniões Públicas, Evangelização Infantil e Adulto, Sopa Fraterna e atividades do Lar Espírita Cristão e da Casa do Pão Chico Xavier."
+date: 2026-07-17
 weight: 30
 ---
 
-🕊️ **Muita Paz!** Compartilhamos com alegria os horários das atividades em nossas casas para que você possa se programar e participar conosco.
+> **Muita Paz!** Compartilhamos com alegria os horários das atividades em nossas casas para que você possa se programar e participar conosco.
 
 ---
 
@@ -46,7 +48,7 @@ Um espaço de Jesus e Evangelho para os pequenos.
 ### 🥣 Sopa Fraterna
 Trabalho de auxílio e caridade em ambas as unidades.
 
-* **Lar Espírita Cristão:** * De segunda a sábado, das 14:15 às 15:00.
+* **Lar Espírita Cristão:** De segunda a sábado, das 14:15 às 15:00.
 * **Casa do Pão Chico Xavier:**
   * **4ª feira:** 14:30 às 15:00
   * **6ª feira:** 15:00 às 15:30
@@ -54,3 +56,5 @@ Trabalho de auxílio e caridade em ambas as unidades.
 ---
 
 > **Nota:** Para dúvidas ou mais informações, sinta-se à vontade para nos visitar em um dos horários acima. Fora da Caridade não há Salvação.
+
+---

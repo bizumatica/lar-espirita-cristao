@@ -1,11 +1,11 @@
 ---
 title: "História"
-description: "História do Lar Espírita Cristão e da Casa do Pão Chico Xavier"
+description: "Conheça a história de fundação do Lar Espírita Cristão, do Albergue Noturno Bom Samaritano e da Casa do Pão Chico Xavier em Itatiba/SP."
 date: 2024-03-21
 weight: 20
 ---
 
-#### _Esta seção é dedicada ao registro e lembrança dos nossos queridos irmãos pioneiros da nossa Casa de Oração._
+> Esta seção é dedicada ao registro e lembrança dos nossos queridos irmãos pioneiros da nossa Casa de Oração.
 
 ### O Início e a Sede Própria
 A história do **Lar Espírita Cristão** ganha um marco fundamental em **30 de agosto de 1975**, quando **Antonio de Pádua Souza** assume como dirigente. A instituição estabeleceu-se em sede própria, situada à Rua João Fontana, nº 157, no Jardim de Lucca, em Itatiba/SP, com o firme propósito de prestar serviços à comunidade carente.
@@ -17,7 +17,7 @@ A sede possui dois pavimentos em um terreno de 250 metros quadrados. Em suas dep
 ---
 
 ### Caridade
-O trabalho no Lar é fruto de um esforço incessante e voluntário.
+O trabalho no Lar é fruto de um espaço incessante e voluntário.
 
 * **Evangelização Infantil**
 * **Evangelização da Mocidade**
@@ -27,7 +27,7 @@ O trabalho no Lar é fruto de um esforço incessante e voluntário.
 
 ---
 
-### A Casa do Pão "Chico Xavier"
+### A Casa do Pão Chico Xavier
 Nascida do desejo de expandir o amor fraterno, surgiu a oportunidade de levar pães à comunidade do **Jardim Galletto**. Esse trabalho inicial frutificou na composição de um terreno de 1.420 metros quadrados.
 
 Hoje, no local, erguem-se dois galpões que formam a **Casa do Pão "Chico Xavier"**, fundada em **15 de julho de 1978**. Localizada na Rua Fábio Zuianni, nº 625, Jardim Galletto, a unidade continua o legado humanitário da nossa instituição.
@@ -43,3 +43,5 @@ Rua João Fontana, 157 - Jardim de Lucca, Itatiba - SP
 
 #### Casa do Pão Chico Xavier
 Rua Fábio Zuianni, 625 - Jardim Galletto, Itatiba - SP
+
+---

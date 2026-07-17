@@ -1,6 +1,9 @@
 ---
 title: "O Codificador"
+date: 2026-01-25T08:00:00-03:00
+draft: false
 type: "post"
+summary: "Compreenda a estrutura mental e o método experimental utilizado por Allan Kardec para organizar a Codificação Espírita, sob o olhar histórico de pesquisadores e biógrafos."
 ---
 
 Compreender **Allan Kardec** exige ir além da superfície do Codificador. É necessário enxergar o Professor Hippolyte Léon Denizard Rivail, o pedagogo discípulo de Pestalozzi, cuja estrutura mental permitiu a organização da Doutrina Espírita. Através das lentes de pesquisadores fundamentais como **Silvino Canuto Abreu** e o testemunho de **Geraldo Lemos Neto**, **Carlos Baccelli** e a mediunidade de **Chico Xavier**, mergulhamos na missão que alterou o paradigma espiritual do Ocidente.
@@ -12,7 +15,7 @@ Fundada em 1º de abril de 1858, a **Sociedade Parisiense de Estudos Espíritas*
 
 {{< foto src="RSaintAnne-m.webp" alt="Sociedade Parisiense de Estudos Espíritas" legenda="Passagem à Rua Saint'Anne, sede da SPEE" >}}
 
-Deste esforço nasceu o **Pentateuco Kardequiano**, o corpo de cinco obras fundamentais que sustentam o edifício doutrinário:
+Deste esforço nasceu o **Pentateuco Kardequiano**, o corpo de micro-obras fundamentais que sustentam o edifício doutrinário:
 1. *O Livro dos Espíritos* (1857)
 2. *O Livro dos Médiuns* (1861)
 3. *O Evangelho segundo o Espiritismo* (1864)
@@ -33,7 +36,7 @@ Um dos temas mais fascinantes é a predição contida em ***Obras Póstumas*** (
 Essa dinâmica prova que o Espiritismo é uma **Doutrina Progressiva**. Como o próprio Kardec afirmou n'*A Gênese*: "Caminhando de par com o progresso, o Espiritismo jamais será ultrapassado, porque, se novas descobertas demonstrassem estar ele em erro sobre um ponto, ele se modificaria sobre esse ponto."
 
 ## O Vínculo com Jesus e o Espírito da Verdade
-Acima de tudo, a missão kardequiana é um mandato cristocêntrico. Kardec foi o instrumento escolhido pelo **Espírito da Verdade** (coordenador da falange do Consolador) para restabelecer o Cristianismo em sua pureza original. Seu vínculo com Jesus não era de adoração estéril, mas de trabalho incessante para a transformação moral da humanidade.
+Acima de tudo, a missão kardequiana é um mandato cristocêntrico. Kardec foi o instrumento escolhido pelo **Espírito da Verdade** (coordenador da falange do Consolador) para restabelecer o Cristianismo em sua pureza original. Seu vínculo com Jesus não era de adoração estéril, mas de trabalho incessantante para a transformação moral da humanidade.
 
 ---
 
@@ -42,10 +45,14 @@ Acima de tudo, a missão kardequiana é um mandato cristocêntrico. Kardec foi o
 Para aprofundar seu conhecimento com fontes seguras e históricas:
 
 * **[Allan Kardec na Obra de Chico Xavier - Carlos Baccelli](https://www.youtube.com/watch?v=IMfeYpBtEm8)** - 10 princípios básicos da codificação Kardequiana na obra Xavieriana.
-* **[Geraldo Lemos Neto "A volta de Allan Kardec em Chico Xavier"](https://www.youtube.com/watch?v=xEoGDmKfeSw)** - Chico Xavier é a Reencarnação de Allan Kardec.
+* **[Geraldo Lemos Neto \"A volta de Allan Kardec em Chico Xavier\"](https://www.youtube.com/watch?v=xEoGDmKfeSw)** - Chico Xavier é a Reencarnação de Allan Kardec.
 * **[A Missão de Canuto de Abreu.](https://www.youtube.com/watch?v=onjTRR8RlAg)** - A história do pesquisador que, orientado por cartas de Chico Xavier e Emmanuel, resgatou na França um tesouro: centenas de cartas inéditas de Allan Kardec. Revelado em seu acervo pessoal.
 * **[Pinga-Fogo: Chico Xavier fala sobre a Codificação](https://www.youtube.com/watch?v=P2LshV_yqX4)** - O marco histórico da divulgação espírita-cristã no Brasil.
 
 ---
 
 *Este artigo é uma contribuição do **Lar Espírita Cristão - Itatiba (LEC)** para a divulgação doutrinária.*
+
+---
+
+{{< links_uteis >}}

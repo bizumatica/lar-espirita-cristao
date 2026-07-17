@@ -1,44 +1,43 @@
 ---
 title: "Nosso Chico"
+description: "Reflexões sobre o mandato de amor, a disciplina mediúnica e o caráter ilibado de Francisco Cândido Xavier através dos relatos de seus biógrafos."
 date: 2026-01-25T08:00:00-03:00
 draft: false
+summary: "Um estudo profundo sobre a renúncia, disciplina e fidelidade ao Cristo demonstradas na trajetória mediúnica e humanitária de Francisco Cândido Xavier."
 ---
 
-# O Mandato de Amor e a Fidelidade ao Cristo
+## O Mandato de Amor e a Fidelidade ao Cristo
 
 Francisco Cândido Xavier não foi apenas um médium; foi um fenômeno de renúncia e disciplina que alterou os rumos do Espiritismo no Brasil e no mundo. Beber na fonte de quem conviveu com ele, como **Carlos Baccelli** e **Drª. Marlene Nobre**, nos permite enxergar o homem por trás do fenômeno, cuja vida foi o seu maior livro.
 
-## O Mandato Mediúnico e a Disciplina
-
+### O Mandato Mediúnico e a Disciplina
 Segundo os relatos de seus biógrafos e amigos próximos, a mediunidade de Chico não era um simples dom, mas um **mandato de missão**. Desde o encontro com Emmanuel em 1931, a diretriz foi clara: *Disciplina, Disciplina e Disciplina.*
 
 {{< foto src="Francico_Candido_Xavier.webp" alt="Francisco Cândido Xavier" legenda="Chico Xavier psicografando." >}}
 
 Chico abdicou de vida privada, posses e descanso para servir de ponte entre dois mundos. Ele psicografou mais de 500 livros, cujos direitos autorais foram integralmente doados a instituições de caridade, reafirmando seu desapego absoluto e caráter ilibado.
 
-### O Testemunho de Carlos Baccelli
+#### O Testemunho de Carlos Baccelli
 Carlos Baccelli, que acompanhou Chico em Uberaba por décadas, ressalta em obras como *"Chico Xavier, à sombra do abacateiro"* que a maior força de Chico não estava nos prodígios, mas na sua **humildade inabalável**.
 
 > "Chico nunca se sentiu o dono da mensagem, mas o servidor da palavra." 
 
-### A Preservação da Memória com Geraldo Lemos Neto
+#### A Preservação da Memória com Geraldo Lemos Neto
 Geraldo Lemos Neto, fundador da [Vinha de Luz](https://vinhadeluz.com.br), destaca o lado humano e o acolhimento que o médium dispensava a todos. É através de Geraldo que conhecemos detalhes profundos sobre a "Data Limite" e o papel do Brasil como o Coração do Mundo e Pátria do Evangelho.
 
 ---
 
-## Caráter Ilibado e Vínculo com o Cristo
-
+### Caráter Ilibado e Vínculo com o Cristo
 Chico não pregava o Evangelho; ele o vivia. Sua existência era uma extensão das bem-aventuranças. Mesmo sob calúnias ou perseguições, sua resposta era o silêncio respeitoso ou a prece. Ele consolidou o "Espiritismo Prático", onde o conhecimento doutrinário se traduzia em amparo aos necessitados e consolo às famílias enlutadas.
 
 {{< foto src="chico-xavierlar-caridade-.webp" alt="Francisco Cândido Xavier 2" legenda="Chico Xavier e o povo." >}}
 
-## Conclusão
-
+### Conclusão
 Ao olharmos para a trajetória de Chico sob a ótica de seus amigos e biógrafos, compreendemos que ele foi o *fiel seguidor* que o Consolador Prometido precisava para florescer em solo brasileiro. Seu mandato foi cumprido com a pureza de quem sabia que era apenas um "cisco", mas um cisco que permitiu à luz do Alto brilhar sem obstáculos.
 
 ---
 
-## Conteúdo Recomendado (Vídeos)
+### Conteúdo Recomendado (Vídeos)
 
 Para aprofundar o estudo sobre a vida de Chico Xavier, selecionamos conteúdos essenciais:
 
@@ -47,4 +46,9 @@ Para aprofundar o estudo sobre a vida de Chico Xavier, selecionamos conteúdos e
 * **[Chico Xavier no Programa Pinga-Fogo (Tupi)](https://lecitatiba.com.br/chico-xavier/pinga-fogo/)** - O marco histórico da divulgação espírita-cristã no Brasil.
 
 ---
-*Este artigo é uma contribuição do **Lar Espírita Cristão - Itatiba (LEC)** para a divulgação doutrinária.*
+
+> *Este artigo é uma contribuição do **Lar Espírita Cristão - Itatiba (LEC)** para a divulgação doutrinária.*
+
+---
+
+{{< links_uteis >}}
