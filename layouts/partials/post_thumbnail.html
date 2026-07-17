@@ -1,0 +1,41 @@
+<!-- ./layouts/partials/post_thumbnail.html -->
+{{- /* RESOLUÇÃO DE CONTEXTO SEM REFLEXÃO: Evita loops infinitos de pipeline */ -}}
+{{- $page := . -}}
+
+{{- if not .IsPage }}
+    {{- if .page }}
+        {{- $page = .page -}}
+    {{- end }}
+{{- end }}
+
+<!-- Processamento seguro baseado na instância isolada da página -->
+{{- $thumbnail := $page.Params.thumbnail -}}
+{{- $title := $page.Title -}}
+
+{{- if $thumbnail }}
+    {{- $res := $page.Resources.GetMatch $thumbnail }}
+    {{- if $res }}
+        <!-- Imagem no Leaf Bundle: Redimensionamento na borda -->
+        {{- $thumbProcessed := $res.Process "resize 250x webp q85" }}
+        <div class="list__thumbnail-wrapper">
+            <img class="list__thumbnail" src="{{ $thumbProcessed.RelPermalink }}" width="{{ $thumbProcessed.Width }}" height="{{ $thumbProcessed.Height }}" alt="{{ $title }}" loading="lazy">
+        </div>
+    {{- else }}
+        <!-- Fallback: Imagem global em /static ou URL externa -->
+        <div class="list__thumbnail-wrapper">
+            <img class="list__thumbnail" src="{{ $thumbnail | relURL }}" alt="{{ $title }}" loading="lazy">
+        </div>
+    {{- end }}
+{{- else }}
+    <!-- Busca automática e segura de imagens no escopo do bundle -->
+    {{- if $page.Resources }}
+        {{- $images := $page.Resources.ByType "image" }}
+        {{- if gt (len $images) 0 }}
+            {{- $firstImage := index $images 0 }}
+            {{- $thumbProcessed := $firstImage.Process "resize 250x webp q85" }}
+            <div class="list__thumbnail-wrapper">
+                <img class="list__thumbnail" src="{{ $thumbProcessed.RelPermalink }}" width="{{ $thumbProcessed.Width }}" height="{{ $thumbProcessed.Height }}" alt="{{ $title }}" loading="lazy">
+            </div>
+        {{- end }}
+    {{- end }}
+{{- end }}

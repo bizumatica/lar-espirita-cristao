@@ -2,6 +2,7 @@
 title: "Andre Luiz Ruiz - 2026"
 date: 2026-07-16T18:00:00-03:00
 draft: false
+thumbnail: "andreluizruiz.webp"
 ---
 
 # Palestra com Andre Luiz Ruiz no Lar Espírita Cristão (LEC)
