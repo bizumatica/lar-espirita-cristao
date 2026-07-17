@@ -1,41 +1,50 @@
 <!-- ./layouts/partials/post_thumbnail.html -->
-{{- /* RESOLUÇÃO DE CONTEXTO SEM REFLEXÃO: Evita loops infinitos de pipeline */ -}}
 {{- $page := . -}}
 
+{{- /* RESOLUÇÃO DE CONTEXTO SEM REFLEXÃO */ -}}
 {{- if not .IsPage }}
     {{- if .page }}
         {{- $page = .page -}}
     {{- end }}
 {{- end }}
 
-<!-- Processamento seguro baseado na instância isolada da página -->
-{{- $thumbnail := $page.Params.thumbnail -}}
-{{- $title := $page.Title -}}
-
-{{- if $thumbnail }}
-    {{- $res := $page.Resources.GetMatch $thumbnail }}
-    {{- if $res }}
-        <!-- Imagem no Leaf Bundle: Redimensionamento na borda -->
-        {{- $thumbProcessed := $res.Process "resize 250x webp q85" }}
-        <div class="list__thumbnail-wrapper">
-            <img class="list__thumbnail" src="{{ $thumbProcessed.RelPermalink }}" width="{{ $thumbProcessed.Width }}" height="{{ $thumbProcessed.Height }}" alt="{{ $title }}" loading="lazy">
-        </div>
+{{- /* TRAVA DE SEGURANÇA: Se for a página interna/completa do post (single), NÃO renderiza a thumb */ -}}
+{{- if $page.IsPage }}
+    {{- if not .class }} 
+        {{- /* O tema Mainroad passa (dict "class" "list" "page" .) nas listas. */ -}}
+        {{- /* Se .class NÃO existir, significa que foi chamado pelo single.html. Abortamos aqui. */ -}}
+    {{- else if ne .class "list" }}
+        {{- /* Validação extra para garantir que só exibe em contextos de listagem/home */ -}}
     {{- else }}
-        <!-- Fallback: Imagem global em /static ou URL externa -->
-        <div class="list__thumbnail-wrapper">
-            <img class="list__thumbnail" src="{{ $thumbnail | relURL }}" alt="{{ $title }}" loading="lazy">
-        </div>
-    {{- end }}
-{{- else }}
-    <!-- Busca automática e segura de imagens no escopo do bundle -->
-    {{- if $page.Resources }}
-        {{- $images := $page.Resources.ByType "image" }}
-        {{- if gt (len $images) 0 }}
-            {{- $firstImage := index $images 0 }}
-            {{- $thumbProcessed := $firstImage.Process "resize 250x webp q85" }}
-            <div class="list__thumbnail-wrapper">
-                <img class="list__thumbnail" src="{{ $thumbProcessed.RelPermalink }}" width="{{ $thumbProcessed.Width }}" height="{{ $thumbProcessed.Height }}" alt="{{ $title }}" loading="lazy">
-            </div>
+
+        <!-- Bloco de renderização original otimizado para a HOME/LISTAS -->
+        {{- $thumbnail := $page.Params.thumbnail -}}
+        {{- $title := $page.Title -}}
+
+        {{- if $thumbnail }}
+            {{- $res := $page.Resources.GetMatch $thumbnail }}
+            {{- if $res }}
+                {{- $thumbProcessed := $res.Process "resize 250x webp q85" }}
+                <div class="list__thumbnail-wrapper">
+                    <img class="list__thumbnail" src="{{ $thumbProcessed.RelPermalink }}" width="{{ $thumbProcessed.Width }}" height="{{ $thumbProcessed.Height }}" alt="{{ $title }}" loading="lazy">
+                </div>
+            {{- else }}
+                <div class="list__thumbnail-wrapper">
+                    <img class="list__thumbnail" src="{{ $thumbnail | relURL }}" alt="{{ $title }}" loading="lazy">
+                </div>
+            {{- end }}
+        {{- else }}
+            {{- if $page.Resources }}
+                {{- $images := $page.Resources.ByType "image" }}
+                {{- if gt (len $images) 0 }}
+                    {{- $firstImage := index $images 0 }}
+                    {{- $thumbProcessed := $firstImage.Process "resize 250x webp q85" }}
+                    <div class="list__thumbnail-wrapper">
+                        <img class="list__thumbnail" src="{{ $thumbProcessed.RelPermalink }}" width="{{ $thumbProcessed.Width }}" height="{{ $thumbProcessed.Height }}" alt="{{ $title }}" loading="lazy">
+                    </div>
+                {{- end }}
+            {{- end }}
         {{- end }}
+
     {{- end }}
 {{- end }}
