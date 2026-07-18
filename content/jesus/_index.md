@@ -1,7 +1,7 @@
 ---
 title: "O Mestre Jesus"
 description: "Estudos, reflexões e ensinamentos baseados no Evangelho de Jesus sob a ótica da Doutrina Espírita."
-date: 2026-07-18
+date: 2026-01-18
 layout: "list"
 weight: 80
 ---
