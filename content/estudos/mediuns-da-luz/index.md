@@ -2,6 +2,7 @@
 title: "Jesus, Kardec e Chico Xavier - Médiuns da Luz"
 date: 2026-06-25T08:00:00-03:00
 draft: false
+thumbnail: "jkc2.webp"
 summary: "Um estudo detalhado sobre o papel da mediunidade como lei natural e canal de comunicação divino para a evolução espiritual da humanidade."
 ---
 

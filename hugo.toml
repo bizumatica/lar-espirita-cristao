@@ -4,6 +4,8 @@ title = "Lar Espírita Cristão"
 theme = "mainroad"
 # publishDir = "docs" (modificado para o pdrão pulic)
 defaultContentLanguage = 'pt-br'
+# Desativa a pluralização automática de títulos de seções e taxonomias pelo motor do Hugo
+pluralizeListTitles = false
 
 [pagination]
   pagerSize = 5

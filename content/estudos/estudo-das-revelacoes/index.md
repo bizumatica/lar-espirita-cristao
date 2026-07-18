@@ -2,6 +2,7 @@
 title: "Estudo das Revelações"
 date: 2026-01-25T08:00:00-03:00
 draft: false
+thumbnail: "revelacoes.webp"
 summary: "Uma reflexão que une as revelações dos Espíritos Superiores às teorias científicas de Einstein e Max Planck sobre a formação do Universo e dos Multiversos."
 ---
 

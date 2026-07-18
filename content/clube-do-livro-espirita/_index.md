@@ -7,6 +7,6 @@ weight: 70
 
 Esta seção é dedicada ao incentivo ao estudo doutrinário contínuo e compartilhado.
 
-> *"Espíritas! Amai-vos, eis o primeiro mandamento. Instruí-vos, eis o segundo!"* — **Espírito de Verdade (O Evangelho segundo o Espiritismo, Cap. VI, Item 5)**
+> *"Espíritas! Amai-vos, eis o primeiro mandamento. Instruí-vos, eis o segundo!"* — **Espírito da Verdade (O Evangelho segundo o Espiritismo, Cap. VI, Item 5)**
 
 ---
