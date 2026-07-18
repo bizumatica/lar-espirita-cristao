@@ -1,7 +1,7 @@
 ---
 title: "Jesus"
 description: "A célebre carta de Públio Lentulus ao Imperador Tibério César, descrevendo os aspectos físicos e morais do Mestre Jesus sob a ótica histórica e espírita."
-date: 2026-07-17
+date: 2026-01-18
 draft: false
 thumbnail: "Jesus2.webp"
 ---
