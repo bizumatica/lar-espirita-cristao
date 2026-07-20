@@ -1,0 +1,169 @@
+{{ define "main" }}
+{{/* 1. QUERY DE PÁGINAS & PAGINAÇÃO */}}
+{{ $pages := .RegularPagesRecursive }}
+{{ if not $pages }}
+    {{ $pages = .Pages }}
+{{ end }}
+
+{{ $paginator := .Paginate $pages 6 }}
+{{ $pageCount := len $paginator.Pages }}
+
+<main class="main list main-section-node" role="main">
+
+    <!-- Cabeçalho da Seção -->
+    <header class="page-header" style="margin-bottom: 1.5rem;">
+        <h1 class="page-header__title" style="font-size: 2rem; margin-bottom: 0.5rem;">{{ .Title }}</h1>
+        {{ with .Description }}
+        <div class="page-header__description" style="color: #666; font-size: 1.05rem;">{{ . }}</div>
+        {{ end }}
+    </header>
+
+    <!-- Conteúdo textual do _index.md (se houver) -->
+    {{ if .Content }}
+    <article class="section-direct-content" style="background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; line-height: 1.6;">
+        {{ .Content }}
+    </article>
+    {{ end }}
+
+    <!-- 2. RENDERIZAÇÃO: ITEM ÚNICO VS GRID MÚLTIPLO -->
+    {{ if eq $pageCount 1 }}
+        {{/* === DESTAQUE CENTRALIZADO (1 POST) === */}}
+        {{ range $paginator.Pages }}
+            {{ $post := . }}
+            {{ $imgUrl := "" }}
+            {{ $resource := .Resources.GetMatch "*{cover,feature,header,banner,thumbnail}*" | default (.Resources.GetMatch "*.{jpg,jpeg,png,webp,svg}") }}
+
+            {{ if $resource }}
+                {{ $subType := $resource.MediaType.SubType }}
+                {{ if or (eq $subType "webp") (eq $subType "svg") }}
+                    {{ $imgUrl = $resource.RelPermalink }}
+                {{ else }}
+                    {{ $imgUrl = ($resource.Resize "800x q85 webp").RelPermalink }}
+                {{ end }}
+            {{ else if .Params.image }}
+                {{ $imgUrl = (cond (reflect.IsMap .Params.image) .Params.image.src .Params.image) | relURL }}
+            {{ else if .Params.images }}
+                {{ $imgUrl = index .Params.images 0 | relURL }}
+            {{ end }}
+
+            <div class="single-card-wrapper" style="display: flex; justify-content: center; width: 100%; margin: 1rem 0 2rem 0;">
+                <article class="card-node card-node--featured" style="width: 100%; max-width: 640px; border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.5rem; background: #fff; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+                    
+                    <!-- 1. TÍTULO -->
+                    <h2 class="card-node__title" style="font-size: 1.4rem; margin: 0 0 0.35rem 0; line-height: 1.35; font-weight: 700; width: 100%; text-align: center;">
+                        <a href="{{ .RelPermalink }}" class="instant-link" style="text-decoration: none; color: #1a1a1a;">{{ .Title }}</a>
+                    </h2>
+
+                    <!-- 2. DATA (LOGO ABAIXO DO TÍTULO) -->
+                    <time datetime="{{ .Date.Format "2006-01-02" }}" style="font-size: 0.85rem; color: #888; margin-bottom: 1.25rem; width: 100%; text-align: center;">
+                        {{ .Date.Format "02/01/2006" }}
+                    </time>
+
+                    <!-- 3. THUMBNAIL (ABAIXO DA DATA) -->
+                    {{ with $imgUrl }}
+                    <a href="{{ $post.RelPermalink }}" class="card-node__img-link instant-link" style="width: 100%; display: flex; justify-content: center; align-items: center; margin-bottom: 1.25rem; border-radius: 6px; background: #f4f4f6; overflow: hidden;">
+                        <img src="{{ . }}" 
+                             alt="{{ $post.Title }}" 
+                             loading="eager" 
+                             fetchpriority="high"
+                             decoding="sync" 
+                             style="max-width: 100%; height: auto; max-height: 420px; object-fit: contain; display: block; margin: 0 auto; border-radius: 4px;">
+                    </a>
+                    {{ end }}
+
+                    <!-- 4. DESCRIÇÃO/RESUMO -->
+                    {{ with $post.Params.description | default $post.Summary }}
+                    <p style="color: #555; font-size: 0.95rem; margin: 0; line-height: 1.5; max-width: 90%; text-align: center;">
+                        {{ . | plainify | truncate 140 }}
+                    </p>
+                    {{ end }}
+
+                </article>
+            </div>
+        {{ end }}
+
+    {{ else if gt $pageCount 1 }}
+        {{/* === GRID PARA MÚLTIPLOS ITENS (2+ POSTS) === */}}
+        <div class="section-cards-grid" style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+            {{ range $index, $post := $paginator.Pages }}
+                {{ $imgUrl := "" }}
+                {{ $resource := .Resources.GetMatch "*{cover,feature,header,banner,thumbnail}*" | default (.Resources.GetMatch "*.{jpg,jpeg,png,webp,svg}") }}
+
+                {{ if $resource }}
+                    {{ $subType := $resource.MediaType.SubType }}
+                    {{ if or (eq $subType "webp") (eq $subType "svg") }}
+                        {{ $imgUrl = $resource.RelPermalink }}
+                    {{ else }}
+                        {{ $imgUrl = ($resource.Resize "500x q85 webp").RelPermalink }}
+                    {{ end }}
+                {{ else if .Params.image }}
+                    {{ $imgUrl = (cond (reflect.IsMap .Params.image) .Params.image.src .Params.image) | relURL }}
+                {{ else if .Params.images }}
+                    {{ $imgUrl = index .Params.images 0 | relURL }}
+                {{ end }}
+
+                <article class="card-node" style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.25rem 1rem 1rem 1rem; background: #fff; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                    
+                    <!-- 1. TÍTULO -->
+                    <h2 class="card-node__title" style="font-size: 1.1rem; margin: 0 0 0.35rem 0; line-height: 1.35; font-weight: 600; width: 100%; text-align: center;">
+                        <a href="{{ .RelPermalink }}" class="instant-link" style="text-decoration: none; color: #1a1a1a;">{{ .Title }}</a>
+                    </h2>
+
+                    <!-- 2. DATA (LOGO ABAIXO DO TÍTULO) -->
+                    <time datetime="{{ .Date.Format "2006-01-02" }}" style="font-size: 0.8rem; color: #888; margin-bottom: 0.85rem; width: 100%; text-align: center;">
+                        {{ .Date.Format "02/01/2006" }}
+                    </time>
+
+                    <!-- 3. THUMBNAIL (NO RODAPÉ DO CARD) -->
+                    {{ with $imgUrl }}
+                    <a href="{{ $post.RelPermalink }}" class="card-node__img-link instant-link" style="width: 100%; display: flex; align-items: center; justify-content: center; margin-top: auto; border-radius: 6px; aspect-ratio: 16/9; background: #f4f4f6; overflow: hidden; text-align: center;">
+                        <img src="{{ . }}" 
+                             alt="{{ $post.Title }}" 
+                             loading="{{ if lt $index 2 }}eager{{ else }}lazy{{ end }}" 
+                             fetchpriority="{{ if lt $index 2 }}high{{ else }}auto{{ end }}"
+                             decoding="async" 
+                             style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; margin: 0 auto; border-radius: 4px;">
+                    </a>
+                    {{ end }}
+
+                </article>
+            {{ end }}
+        </div>
+    {{ end }}
+
+    <!-- Paginação Nativa -->
+    {{ if gt $paginator.TotalPages 1 }}
+    <nav class="pagination" role="navigation" aria-label="Navegação de página" style="margin-top: 2rem; display: flex; justify-content: center; gap: 0.5rem; align-items: center;">
+        {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}" class="pagination__item pagination__item--prev instant-link" style="padding: 6px 12px; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333;">« Anterior</a>
+        {{ end }}
+
+        <span class="pagination__item pagination__item--current" style="padding: 6px 12px; font-weight: bold; color: #e22d30;">
+            {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}
+        </span>
+
+        {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}" class="pagination__item pagination__item--next instant-link" style="padding: 6px 12px; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333;">Próximo »</a>
+        {{ end }}
+    </nav>
+    {{ end }}
+
+</main>
+
+<!-- ENGINE DE PREFETCH (Instant Click) -->
+<script>
+    (function() {
+        const preloaded = new Set();
+        document.addEventListener('mouseover', function(e) {
+            const link = e.target.closest('a.instant-link');
+            if (link && link.href && !preloaded.has(link.href) && link.origin === location.origin) {
+                preloaded.add(link.href);
+                const fetcher = document.createElement('link');
+                fetcher.rel = 'prefetch';
+                fetcher.href = link.href;
+                document.head.appendChild(fetcher);
+            }
+        }, { passive: true });
+    })();
+</script>
+{{ end }}

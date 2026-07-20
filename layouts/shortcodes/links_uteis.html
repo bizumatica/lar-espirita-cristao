@@ -1,10 +1,42 @@
-<div class="links-uteis">
-    <h3>Links Úteis e Parceiros:</h3>
-    <ul>
-        {{ range .Site.Data.parceiros.links }}
-        <li>
-            <strong><a href="{{ .url }}" target="_blank" rel="noopener">{{ .nome }}</a></strong>
-        </li>
+{{/* 
+  Shortcode: links_uteis.html
+  Fonte de Dados: /data/parceiros.(json|yaml|toml)
+  Compatibilidade: Hugo v0.156.0+ (site.Data)
+*/}}
+
+{{ $links := site.Data.parceiros.links }}
+
+{{ if $links }}
+  <ul class="links-uteis-list" style="list-style: none; padding: 0; margin: 1rem 0;">
+    {{ range $links }}
+      {{/* Resolução do Rótulo: Tenta 'nome', se ausente tenta 'title', se ausente usa a própria 'url' */}}
+      {{ $label := .nome | default .title | default .url }}
+      {{ $isExternal := or (hasPrefix .url "http://") (hasPrefix .url "https://") }}
+
+      <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span aria-hidden="true" style="color: #e22d30;">🔗</span>
+        
+        <a href="{{ .url | safeURL }}" 
+           class="instant-link" 
+           {{ if $isExternal }}
+             target="_blank" 
+             rel="noopener noreferrer" 
+           {{ end }}
+           style="text-decoration: none; color: #1a1a1a; font-weight: 500;">
+          {{ $label }}
+        </a>
+
+        {{ with .descricao }}
+          <span style="color: #666; font-size: 0.875rem;">— {{ . }}</span>
         {{ end }}
-    </ul>
-</div>
+      </li>
+    {{ end }}
+  </ul>
+{{ else }}
+  <!-- Fallback de diagnóstico amigável (Apenas para desenvolvimento) -->
+  {{ if site.IsServer }}
+    <p style="color: #c53030; background: #fff5f5; padding: 0.5rem; border-radius: 4px; font-size: 0.85rem; border: 1px solid #feb2b2;">
+      ⚠️ <strong>[Hugo Shortcode Warning]:</strong> Nenhum dado encontrado em <code>/data/parceiros.links</code>.
+    </p>
+  {{ end }}
+{{ end }}

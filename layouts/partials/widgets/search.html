@@ -1,56 +1,107 @@
 <div class="widget-search widget" aria-label="Pesquisa interna">
     <h4 class="widget__title">Busca</h4>
     
-    <div id="search"></div>
-    
+    <!-- CSS Otimizado: Variáveis inseridas diretamente para não bloquear renderização -->
     <style>
         :root {
-            --pagefind-ui-scale: 0.85; /* Escala reduzida para encaixar melhor em sidebars */
-            --pagefind-ui-primary: #e22d30; /* Cor primária do tema (borda em foco/botões) */
+            --pagefind-ui-scale: 0.85;
+            --pagefind-ui-primary: #e22d30;
             --pagefind-ui-text: #333333;
             --pagefind-ui-background: #ffffff;
             --pagefind-ui-border: #e0e0e0;
             --pagefind-ui-border-width: 1px;
             --pagefind-ui-border-radius: 4px;
-            --pagefind-ui-font: inherit; /* Herda a tipografia global do site */
+            --pagefind-ui-font: inherit;
         }
-        /* Previne transbordo do campo de busca na lateral */
         .pagefind-ui__form { max-width: 100%; }
         .pagefind-ui__search-input { font-weight: normal !important; }
+        
+        /* Estilo da "Fachada" ultra-leve (Fake Input) */
+        #search-facade {
+            display: flex;
+            align-items: center;
+            border: var(--pagefind-ui-border-width) solid var(--pagefind-ui-border);
+            border-radius: var(--pagefind-ui-border-radius);
+            padding: 8px 12px;
+            background: var(--pagefind-ui-background);
+            cursor: text;
+            transition: border-color 0.2s;
+        }
+        #search-facade:hover { border-color: var(--pagefind-ui-primary); }
+        #search-facade span { color: #888; font-size: 14px; }
     </style>
     
-    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <!-- 1. FACHADA: É renderizada no HTML inicial com custo ZERO de JS -->
+    <!-- Os eventos 'mouseenter' (hover) e 'touchstart' disparam o pré-carregamento -->
+    <div id="search-facade" onmouseenter="bootPagefind()" onclick="bootPagefind()" ontouchstart="bootPagefind()">
+        <span id="search-facade-text">Pesquisar no site...</span>
+    </div>
+
+    <!-- 2. CONTAINER REAL: Fica oculto até o script carregar -->
+    <div id="search" style="display: none;"></div>
     
-    <script src="/pagefind/pagefind-ui.js" defer></script>
-    
+    <!-- 3. MOTOR DE INJEÇÃO LAZY-LOAD -->
     <script>
-        // Aguarda a árvore DOM estar totalmente construída
-        window.addEventListener('DOMContentLoaded', () => {
-            // 3. RESILIÊNCIA (Try/Catch)
-            // Impede que a página quebre caso o script falhe por bloqueadores de anúncio ou erro de rede
-            try {
-                new PagefindUI({ 
-                    element: "#search", 
-                    showImages: false,
-                    showEmptyFilters: false, // Oculta painéis vazios desnecessários
-                    resetStyles: false,
-                    translations: {
-                        placeholder: "Pesquisar no site...",
-                        clear_search: "Limpar",
-                        load_more: "Carregar mais",
-                        search_label: "Buscar",
-                        filters_label: "Filtros",
-                        zero_results: "Nenhum resultado para '[searchTerm]'",
-                        many_results: "[count] resultados para '[searchTerm]'",
-                        one_result: "1 resultado para '[searchTerm]'",
-                        alt_search: "Nada para '[searchTerm]'. Mostrando resultados para '[suggestedTerm]'.",
-                        search_suggestion: "Nenhum resultado para '[searchTerm]'. Tente:",
-                        searching: "Buscando '[searchTerm]'..."
-                    }
-                });
-            } catch (error) {
-                console.warn("[Pagefind] Motor de busca indisponível no momento.", error);
-            }
-        });
+        let pfLoaded = false;
+
+        function bootPagefind() {
+            if (pfLoaded) return; // Garante que roda apenas uma vez
+            pfLoaded = true;
+
+            const facadeText = document.getElementById('search-facade-text');
+            const facadeBox = document.getElementById('search-facade');
+            const realSearchBox = document.getElementById('search');
+
+            // Feedback visual imediato
+            facadeText.innerText = "Carregando motor...";
+
+            // Injeta o CSS do Pagefind de forma não-bloqueante
+            const pfCss = document.createElement('link');
+            pfCss.rel = 'stylesheet';
+            pfCss.href = '/pagefind/pagefind-ui.css';
+            document.head.appendChild(pfCss);
+
+            // Injeta o JS do Pagefind assincronamente
+            const pfJs = document.createElement('script');
+            pfJs.src = '/pagefind/pagefind-ui.js';
+            pfJs.onload = () => {
+                // Quando o script baixar, esconde a fachada e exibe o verdadeiro
+                facadeBox.style.display = 'none';
+                realSearchBox.style.display = 'block';
+
+                try {
+                    new PagefindUI({ 
+                        element: "#search", 
+                        showImages: false,
+                        showEmptyFilters: false,
+                        resetStyles: false,
+                        translations: {
+                            placeholder: "Pesquisar no site...",
+                            clear_search: "Limpar",
+                            load_more: "Carregar mais",
+                            search_label: "Buscar",
+                            filters_label: "Filtros",
+                            zero_results: "Nenhum resultado para '[searchTerm]'",
+                            many_results: "[count] resultados para '[searchTerm]'",
+                            one_result: "1 resultado para '[searchTerm]'",
+                            alt_search: "Nada para '[searchTerm]'. Mostrando resultados para '[suggestedTerm]'.",
+                            search_suggestion: "Nenhum resultado para '[searchTerm]'. Tente:",
+                            searching: "Buscando '[searchTerm]'..."
+                        }
+                    });
+                    
+                    // UX HACK: Força o foco automático no input real após carregar
+                    setTimeout(() => {
+                        const actualInput = document.querySelector('.pagefind-ui__search-input');
+                        if(actualInput) actualInput.focus();
+                    }, 50);
+
+                } catch (error) {
+                    console.error("[Performance V8] Falha ao iniciar Pagefind", error);
+                    facadeText.innerText = "Erro na busca.";
+                }
+            };
+            document.head.appendChild(pfJs);
+        }
     </script>
 </div>
