@@ -1,5 +1,5 @@
 ---
-title: "Distribuição de Pães às Pessoas Carentes"
+title: "Distribuição de Pães à Sombra do Abacateiro"
 date: 2026-07-18T08:00:00-03:00
 draft: false
 thumbnail: "paes.webp"
@@ -12,7 +12,7 @@ Inspirado nas palavras de Mateus 14:16 ('Dei-lhes o pão que precisavam'), este 
 
 Assista abaixo à atividade completa no YouTube:
 
-{{< youtube 72QO8-Kj7nM >}}
+{{< youtube b0hgzORuswk >}}
 
 ---
 

@@ -12,7 +12,7 @@ Este estudo convida a uma pausa de reflexão e comunhão com os ensinamentos de 
 
 Assista abaixo ao estudo completo no YouTube:
 
-{{< youtube 72QO8-Kj7nM >}}
+{{< youtube aJrJt0MNApw >}}
 
 ---
 

@@ -12,7 +12,7 @@ Em homenagem ao médium do amor e da caridade, esta palestra resgata a data hist
 
 Assista abaixo ao estudo completo no YouTube:
 
-{{< youtube 72QO8-Kj7nM >}}
+{{< youtube m0du1w6r2m8 >}}
 
 ---
 

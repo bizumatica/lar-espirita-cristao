@@ -12,7 +12,7 @@ Este estudo, apresentado pelo Lar Espírita Cristão, aborda a essência dos ens
 
 Assista abaixo ao estudo completo no YouTube:
 
-{{< youtube 72QO8-Kj7nM >}}
+{{< youtube BB-7j_uLMAY >}}
 
 ---
 
