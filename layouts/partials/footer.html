@@ -1,117 +1,112 @@
 <footer class="footer">
     <div class="container footer__container">
         
-        {{/* 1. Bloco de Badges de Identificação e Projeto */}}
-        <div class="footer__badges-wrapper">
-            {{ with .Site.Params.footer.copyrightText }}
-            {{/* Fix: Substitui espaços por %20 e remove o sinal de '+' gerado por urlquery */}}
-            <span class="footer__badge-item">
-                <img src="https://img.shields.io/badge/%C2%A9%20{{ now.Format "2006" }}-{{ . | replaceRE " " "%20" }}-8B4513?style=flat-square&logoColor=white" 
-                     alt="© {{ now.Format "2006" }} {{ . }}" 
-                     loading="lazy" 
-                     decoding="async" />
-            </span>
-            {{ end }}
+        {{/* 1. Direitos e Instituição */}}
+        <div class="footer__copyright">
+            &copy; {{ now.Format "2006" }} 
+            {{ with .Site.Params.footer.copyrightText }}{{ . }}{{ else }}Lar Espírita Cristão{{ end }}. 
+            Todos os direitos reservados.
+        </div>
 
-            {{/* Badge Hugo Compacta */}}
-            <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo Static Site Generator" class="footer__badge-item">
-                <img src="https://img.shields.io/badge/Hugo-800000?style=flat-square&logo=hugo&logoColor=white" 
-                     alt="Hugo" 
-                     loading="lazy" 
-                     decoding="async" />
-            </a>
-
-            {{/* Badge GitHub do Repositório */}}
-            <a href="https://github.com/bizumatica/lar-espirita-cristao" target="_blank" rel="noopener noreferrer" title="Código no GitHub" class="footer__badge-item">
-                <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-181717?style=flat-square&logo=gnubash&logoColor=white" 
-                     alt="Código no GitHub" 
-                     loading="lazy" 
-                     decoding="async" />
+        {{/* 2. Créditos e Ferramentas */}}
+        <div class="footer__credits">
+            <span>Desenvolvido com ☕ e 🪵 por</span>
+            <a href="https://juliostudio.dev.br" target="_blank" rel="noopener noreferrer" title="Julio-Studio Dev">Julio-Studio</a>
+            <span class="footer__separator">&middot;</span>
+            <a href="https://github.com/bizumatica" target="_blank" rel="noopener noreferrer" title="Perfil GitHub bizumatica" class="footer__icon-link">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                bizumatica
             </a>
         </div>
 
-        {{/* 2. Bloco Secundário (Atribuição, Dev e Analytics) */}}
-        <div class="footer__meta-wrapper">
-            
-            <div class="footer__badges-wrapper">
-                {{/* Badge "Café & Canela" Enxuta */}}
-                <span class="footer__badge-item">
-                    <img src="https://img.shields.io/badge/caf%C3%A9%20%26%20canela-☕+🪵-6B4226?style=flat-square" 
-                         alt="Café & Canela" 
-                         loading="lazy" 
-                         decoding="async" />
-                </span>
+        {{/* 3. Open Source com Ícone GNU Bash e Hugo */}}
+        <div class="footer__tech">
+            <a href="https://github.com/bizumatica/lar-espirita-cristao" target="_blank" rel="noopener noreferrer" title="Código no GitHub" class="footer__icon-link">
+                {{/* Ícone do GNU Bash (>_) */}}
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4.697 3.002h14.606C20.24 3.002 21 3.762 21 4.697v14.606c0 .935-.76 1.697-1.697 1.697H4.697A1.697 1.697 0 0 1 3 19.303V4.697c0-.935.76-1.695 1.697-1.695zm1.503 3.75v2.25l3.75 2.25-3.75 2.25v2.25l6-3.75v-1.5l-6-3.75zm6.75 9h6v-2.25h-6v2.25z"/></svg>
+                Código Aberto
+            </a>
+            <span class="footer__separator">&middot;</span>
+            <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo Static Site Generator">Criado com Hugo</a>
+        </div>
 
-                {{/* Dev / Studio */}}
-                <a href="https://juliostudio.dev.br" target="_blank" rel="noopener noreferrer" title="Julio-Studio Dev" class="footer__badge-item">
-                    <img src="https://img.shields.io/badge/Dev-Julio--Studio-4A5568?style=flat-square" 
-                         alt="Julio-Studio" 
-                         loading="lazy" 
-                         decoding="async" />
-                </a>
-
-                {{/* GitHub Perfil */}}
-                <a href="https://github.com/bizumatica" target="_blank" rel="noopener noreferrer" title="Perfil bizumatica no GitHub" class="footer__badge-item">
-                    <img src="https://img.shields.io/badge/GitHub-bizumatica-8B4513?style=flat-square&logo=github&logoColor=white" 
-                         alt="bizumatica" 
-                         loading="lazy" 
-                         decoding="async" />
-                </a>
-            </div>
-
-            {{/* Contador de Visitas Compacto */}}
-            <div class="footer__counter">
-                <img src="https://visitor-badge.laobi.icu/badge?page_id=julio-studio.lar-espirita&left_text=Visitas&style=flat-square&left_color=2B303A&right_color=8B4513" 
-                     alt="Contador de Visitas" 
-                     loading="lazy" 
-                     decoding="async" />
-            </div>
-
+        {{/* 4. Contador de Visitas Discreto */}}
+        <div class="footer__counter">
+            <img src="https://visitor-badge.laobi.icu/badge?page_id=julio-studio.lar-espirita&left_text=Visitas&style=flat-square&left_color=2B303A&right_color=4A5568" 
+                 alt="Contador de Visitas" 
+                 loading="lazy" 
+                 decoding="async" />
         </div>
 
     </div>
 </footer>
 
 <style>
-/* Layout Base e Container */
+/* Reset básico para links dentro do footer */
+.footer a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    opacity: 1;
+}
+
+/* Container Principal */
 .footer__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 18px 10px;
+    gap: 12px;
+    padding: 32px 16px;
     text-align: center;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.85rem;
+    color: #a0aec0;
+    background-color: transparent;
 }
 
-/* Grids de Badges */
-.footer__badges-wrapper {
+/* Blocos de Texto Flexíveis */
+.footer__copyright,
+.footer__credits,
+.footer__tech {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 6px;
-    width: 100%;
+    line-height: 1.5;
 }
 
-.footer__badge-item {
+.footer__separator {
+    opacity: 0.5;
+    margin: 0 4px;
+}
+
+/* Alinhamento perfeito entre Ícones SVG e Texto */
+.footer__icon-link {
     display: inline-flex;
     align-items: center;
-    line-height: 1;
+    gap: 5px;
 }
 
-/* Redução Proporcional e Ajuste de Tamanho (Menor e mais elegante) */
-.footer__badge-item img,
+/* Contador de Visitas */
+.footer__counter {
+    margin-top: 8px;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.footer__counter:hover {
+    opacity: 1;
+}
+
 .footer__counter img {
-    height: 17px; /* Reduzido de 20px para 17px para um visual compacto */
+    height: 18px;
+    border-radius: 4px;
     display: block;
-}
-
-/* Bloco Secundário */
-.footer__meta-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
 }
 </style>

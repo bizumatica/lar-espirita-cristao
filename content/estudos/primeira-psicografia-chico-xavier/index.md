@@ -8,7 +8,12 @@ summary: "Palestra especial em homenagem a Chico Xavier, relembrando o marco his
 
 ###### _por Josyan_
 
-Em homenagem ao médium do amor e da caridade, esta palestra resgata a data histórica de 8 de julho de 1927, momento em que Chico Xavier recebeu sua primeira página psicografada. Refletimos sobre o impacto dessa missão espiritual que transformou e consolou milhões de vidas.
+O encontro na **Casa do Pão**, departamento do LEC em Itatiba, reflete sobre o maior mandamento de Jesus e homenageia a vida e obra do médium Chico Xavier.
+
+* **O Maior Mandamento:** Discussão sobre o ensinamento cristão central: amar a Deus sobre todas as coisas e ao próximo como a si mesmo.
+* **Exemplo e Trajetória de Chico Xavier:** Celebração da sua primeira psicografia (1927) e relatos sobre sua infância humilde, mediunidade e atos de caridade.
+* **Legado e Kardecismo:** Análise da relação entre as obras de Allan Kardec e o papel do Brasil na consolidação da Doutrina Espírita.
+* **Imortabilidade da Alma:** Encerramento reforçando a continuidade da vida após a morte e a presença divina no interior de cada indivíduo.
 
 Assista abaixo ao estudo completo no YouTube:
 
