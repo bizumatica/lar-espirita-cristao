@@ -2,6 +2,7 @@
 title: "Palestra com Andre Luiz Ruiz — 51 Anos do LEC (Gravação Integral)"
 date: 2026-07-31T19:30:00-03:00
 draft: false
+weight: 1
 thumbnail: "andre.webp"
 description: "Assista à palestra completa de Andre Luiz Ruiz sobre Transição Planetária, Doutrina Espírita e Frequência Vibratória."
 summary: "Confira a gravação na íntegra da palestra de Andre Luiz Ruiz em comemoração aos 51 anos do Lar Espírita Cristão (LEC)."

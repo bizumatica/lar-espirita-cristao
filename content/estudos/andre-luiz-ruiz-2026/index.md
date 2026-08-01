@@ -2,6 +2,7 @@
 title: "Andre Luiz Ruiz - 2026"
 date: 2026-07-20T18:00:00-03:00
 draft: false
+weight: 2
 thumbnail: "andreluizruiz.webp"
 summary: "Participe da palestra presencial com o expositor Andre Luiz Ruiz no Lar Espírita Cristão (LEC), abordando o tema 'Espiritismo: luz para o caminho da vida'."
 ---
