@@ -1,0 +1,34 @@
+{{/* 
+  Shortcode: {{< youtube id="d4V_I_AE4KU" title="Título do Vídeo" start="0" >}}
+  Suporta chamada posicional: {{< youtube "d4V_I_AE4KU" >}}
+*/}}
+
+{{ $id := .Get "id" | default (.Get 0) }}
+{{ $title := .Get "title" | default "Gravação de Palestra Espírita - Lar Espírita Cristão" }}
+{{ $start := .Get "start" | default "" }}
+
+{{ if $id }}
+  {{ $src := printf "https://www.youtube-nocookie.com/embed/%s" $id }}
+  {{ if $start }}
+    {{ $src = printf "%s?start=%s" $src $start }}
+  {{ end }}
+
+  <div class="my-6 w-full max-w-full mx-auto clear-both">
+    <div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-md border border-gray-200 bg-black">
+      <iframe 
+        class="absolute top-0 left-0 w-full h-full border-0"
+        src="{{ $src }}" 
+        title="{{ $title }}" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen
+        loading="lazy"
+        decoding="async">
+      </iframe>
+    </div>
+    {{ with $title }}
+      <p class="text-center text-xs text-gray-500 mt-2 italic">{{ . }}</p>
+    {{ end }}
+  </div>
+{{ else }}
+  {{ errorf "Erro no Hugo Shortcode: Parâmetro 'id' do vídeo do YouTube é obrigatório em %s" .Position }}
+{{ end }}

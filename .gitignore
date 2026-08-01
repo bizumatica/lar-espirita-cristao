@@ -1,12 +1,99 @@
-# Outputs de compilação (Gerados dinamicamente na nuvem)
-public/
-resources/
-docs/
+# ==============================================================================
+# LAR ESPÍRITA CRISTÃO (LEC) - .gitignore Produção (V8-Hardcore Linux/Manjaro)
+# Target: Hugo Extended, Pagefind Wasm, Python ETL, Cloudflare Pages & Arch/Manjaro
+# ==============================================================================
 
-# Trava de concorrência do Hugo (Sintaxe corrigida)
+# ------------------------------------------------------------------------------
+# 1. HUGO SSG & COMPILAÇÃO DE ATIVOS
+# ------------------------------------------------------------------------------
+# Diretórios de saída gerados no Edge / CI/CD
+/public/
+/resources/
+/docs/
+
+# Travas de concorrência e caches de compilação do Hugo
 .hugo_build_lock
 .hugo_build.lock
+.hugo_cache/
+.sass-cache/
 
-# Arquivos de sistema e feeds locais
-*.xml
+# ------------------------------------------------------------------------------
+# 2. EDGE HOSTING & RUNTIME (Cloudflare Pages / Wrangler)
+# ------------------------------------------------------------------------------
+# Cache e logs do emulador local da Cloudflare Pages
+.wrangler/
+.dev.vars
+
+# ------------------------------------------------------------------------------
+# 3. ECOSSISTEMA DE AUTOMAÇÃO & SEARCH (Node.js & Python ETL)
+# ------------------------------------------------------------------------------
+# Node.js & Pagefind Wasm
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Python (Scripts de ETL / importar.py)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# 4. LINUX / MANJARO / ARCH LINUX (Sistema Operacional & Desktop Envs)
+# ------------------------------------------------------------------------------
+# Trava de arquivo FUSE e Lixeira de ponto de montagem
+.fuse_hidden*
+.Trash-*/
+.directory
+
+# Cache local de runtime do Linux e pacotes
+.cache/
+*.pkg.tar.zst
+/src/
+/pkg/
+
+# ------------------------------------------------------------------------------
+# 5. OUTROS SISTEMAS OPERACIONAIS (macOS & Windows)
+# ------------------------------------------------------------------------------
+# macOS (Arquivos Resource Forks / AppleDouble)
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ------------------------------------------------------------------------------
+# 6. IDES & EDITORES (Sintaxe de Árvore Preservada)
+# ------------------------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# ------------------------------------------------------------------------------
+# 7. SEGURANÇA DA INFORMAÇÃO & VARIÁVEIS DE AMBIENTE
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example

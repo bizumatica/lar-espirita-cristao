@@ -2,6 +2,7 @@
 title: "Distribuição de Pães à Sombra do Abacateiro"
 date: 2026-07-18T08:00:00-03:00
 draft: false
+weight: 9999
 thumbnail: "paes.webp"
 summary: "A caridade em ação: como a assistência material e espiritual se unificam na distribuição do alimento após a reunião do Evangelho."
 ---
