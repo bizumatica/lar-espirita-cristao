@@ -1,47 +1,30 @@
 ---
 title: "História"
-description: "Conheça a história de fundação do Lar Espírita Cristão, do Albergue Noturno Bom Samaritano e da Casa do Pão Chico Xavier em Itatiba/SP."
+description: "Conheça a história do Lar Espírita Cristão (LEC), desde as origens em 1968 com Seu José Ventura até a fundação da sede própria, do Albergue Noturno e da Casa do Pão Chico Xavier."
 date: 2024-03-21
 weight: 20
 ---
 
-> Esta seção é dedicada ao registro e lembrança dos nossos queridos irmãos pioneiros da nossa Casa de Oração.
+> *Seção dedicada ao registro e à memória dos nossos queridos irmãos pioneiros da nossa Casa de Oração.*
 
-### O Início e a Sede Própria
-A história do **Lar Espírita Cristão** ganha um marco fundamental em **30 de agosto de 1975**, quando **Antonio de Pádua Souza** assume como dirigente. A instituição estabeleceu-se em sede própria, situada à Rua João Fontana, nº 157, no Jardim de Lucca, em Itatiba/SP, com o firme propósito de prestar serviços à comunidade carente.
+O **Lar Espírita Cristão (LEC)** é uma oficina de amor, estudo e caridade fundada sob a luz do **Evangelho** do Mestre **Jesus** e os fundamentos da Doutrina Espírita codificada por **Allan Kardec**.
 
-{{< foto src="lec2.webp" alt="Foto estilizada da fachada do LEC" legenda="Fachada em desenho do LEC." >}}
+### As Origens (1968)
+A trajetória da instituição teve início em **1968**, na residência dos pais de um dos fundadores. Ali, sob a orientação do mentor espiritual **Pai Joaquim**, o saudoso **Seu José Ventura** dava os primeiros passos no atendimento de socorro e receituário, iniciando uma jornada de amor ao próximo ao lado de dedicados colaboradores.
 
-A sede possui dois pavimentos em um terreno de 250 metros quadrados. Em suas dependências, funciona também o **Albergue Noturno Bom Samaritano**, fundado em **24 de abril de 1981**, ocupando uma área de 420 metros quadrados com capacidade para acolher 15 migrantes diariamente.
+### Sede Própria e Acolhimento (1975)
+Com a chegada de **Antônio de Pádua Souza (Toninho)** em 1972, trazendo o aprendizado vivenciado com **Chico Xavier**, a casa estruturou suas atividades mediúnicas e assistenciais. A inauguração oficial da sede própria ocorreu em **31 de agosto de 1975**, na Rua João Fontana, 157, Jardim de Lucca. O local abriga também o **Albergue Noturno Bom Samaritano** (fundado em **24 de abril de 1981**), voltado ao amparo diário de migrantes.
 
----
+{{< foto src="lec2.webp" alt="Desenho estilizado da fachada do Lar Espírita Cristão" legenda="Fachada histórica do Lar Espírita Cristão (LEC) em Itatiba/SP." >}}
 
-### Caridade
-O trabalho no Lar é fruto de um espaço incessante e voluntário.
+### A Casa do Pão Chico Xavier (1978)
+Perpetuando o legado de fraternidade, as ações de distribuição de alimentos no Jardim Galletto culminaram na fundação da **Casa do Pão "Chico Xavier"** em **15 de julho de 1978** (Rua Fábio Zuianni, 625), expandindo o amparo material e espiritual à comunidade.
 
-* **Evangelização Infantil**
-* **Evangelização da Mocidade**
-* **Estudo do Evangelho (Madureza)**
-* **Caridade Moral e Material**
-* **Estudo da Mediunidade**
+> *"Fé inabalável só o é a que pode encarar frente a frente a razão em todas as épocas da humanidade."* — Allan Kardec
 
 ---
 
-### A Casa do Pão Chico Xavier
-Nascida do desejo de expandir o amor fraterno, surgiu a oportunidade de levar pães à comunidade do **Jardim Galletto**. Esse trabalho inicial frutificou na composição de um terreno de 1.420 metros quadrados.
+#### Endereços Oficiais
 
-Hoje, no local, erguem-se dois galpões que formam a **Casa do Pão "Chico Xavier"**, fundada em **15 de julho de 1978**. Localizada na Rua Fábio Zuianni, nº 625, Jardim Galletto, a unidade continua o legado humanitário da nossa instituição.
-
-> *"Fé inabalável só o é a que pode encarar frente a frente a razão em todas as épocas da humanidade"*
-
----
-
-### Onde nos Encontrar
-
-#### Lar Espírita Cristão (Sede)
-Rua João Fontana, 157 - Jardim de Lucca, Itatiba - SP
-
-#### Casa do Pão Chico Xavier
-Rua Fábio Zuianni, 625 - Jardim Galletto, Itatiba - SP
-
----
+* **Lar Espírita Cristão (Sede):** Rua João Fontana, 157 — Jardim de Lucca, Itatiba/SP
+* **Casa do Pão Chico Xavier:** Rua Fábio Zuianni, 625 — Jardim Galletto, Itatiba/SP
