@@ -13,7 +13,7 @@ O **Lar Espírita Cristão (LEC)** é uma oficina de amor, estudo e caridade fun
 A trajetória da instituição teve início em **1968**, na residência dos pais de um dos fundadores. Ali, sob a orientação do mentor espiritual **Pai Joaquim**, o saudoso **Seu José Ventura** dava os primeiros passos no atendimento de socorro e receituário, iniciando uma jornada de amor ao próximo ao lado de dedicados colaboradores.
 
 ### Sede Própria e Acolhimento (1975)
-Com a chegada de **Antônio de Pádua Souza (Toninho)** em 1972, trazendo o aprendizado vivenciado com **Chico Xavier**, a casa estruturou suas atividades mediúnicas e assistenciais. A inauguração oficial da sede própria ocorreu em **31 de agosto de 1975**, na Rua João Fontana, 157, Jardim de Lucca. O local abriga também o **Albergue Noturno Bom Samaritano** (fundado em **24 de abril de 1981**), voltado ao amparo diário de migrantes.
+Com a chegada de **Antônio de Pádua Souza (Toninho)** em 1972, trazendo o aprendizado vivenciado com **Roque Jacintho** e **Chico Xavier**, a casa estruturou suas atividades mediúnicas e assistenciais. A inauguração oficial da sede própria ocorreu em **31 de agosto de 1975**, na Rua João Fontana, 157, Jardim de Lucca. O local abriga também o **Albergue Noturno Bom Samaritano** (fundado em **24 de abril de 1981**), voltado ao amparo diário de migrantes.
 
 {{< foto src="lec2.webp" alt="Desenho estilizado da fachada do Lar Espírita Cristão" legenda="Fachada histórica do Lar Espírita Cristão (LEC) em Itatiba/SP." >}}
 
