@@ -2,7 +2,7 @@
 title: "Homenagem aos 51 Anos do Lar Espírita Cristão: Memórias e Alicerces"
 date: 2026-08-17T12:00:00-03:00
 draft: false
-weight: -99
+weight:
 thumbnail: "lec51.webp"
 description: "Um resgate histórico das cinco décadas de trabalho do LEC em Itatiba, pautado nos ensinamentos de Jesus, na Codificação de Allan Kardec e no exemplo de Chico Xavier."
 summary: "Revisitamos a trajetória de 51 anos de caridade do Lar Espírita Cristão (LEC), resgatando a vivência do Evangelho, a influência de Allan Kardec e o legado de amor deixado pelos pioneiros."
