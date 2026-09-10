@@ -23,12 +23,13 @@ pluralizeListTitles = false
   
   youtubeChannelID = "UCW7NoMwjuc5tdLgPhjShlIQ"
   spotifyShowID = "06cqVyhjydGRHPlnGw8AxD"
+  boaNovaStreamURL = "https://8592.brasilstream.com.br/stream?identifica=2271463291458264000"
 
   [params.sidebar]
     home = "right"
     list = "right"
     single = "right"
-    widgets = ["search", "live_audio", "recent", "agenda_custom", "spotify", "mapa_custom", "categories"]
+    widgets = ["search", "live_audio", "boa_nova", "recent", "agenda_custom", "spotify", "mapa_custom", "categories"]
 
   [params.footer]
     copyrightText = "Lar Espírita Cristão"

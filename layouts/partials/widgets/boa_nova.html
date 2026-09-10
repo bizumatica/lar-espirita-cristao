@@ -1,0 +1,86 @@
+<div class="widget widget-boa-nova">
+    <h4 class="widget__title">📻 Rádio Boa Nova (Ao Vivo)</h4>
+    <div class="widget__content" style="text-align: center; background: #fdfdfd; padding: 20px; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+        
+        <div class="boa-nova-container">
+            <!-- Gerenciamento direto no nó <audio> para evitar dessincronia com tag <source> -->
+            <audio class="boa-nova-audio" preload="none"></audio>
+
+            <button type="button"
+                    class="boa-nova-play-btn"
+                    aria-label="Tocar Rádio Boa Nova Ao Vivo"
+                    style="background: #0056b3; color: white; border: none; width: 60px; height: 60px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; transition: background-color 0.3s ease, transform 0.1s ease; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">
+                <span class="boa-nova-icon" aria-hidden="true">▶️</span>
+            </button>
+            
+            <strong class="boa-nova-status" style="display: block; font-size: 0.9rem; color: #333;" aria-live="polite">
+                Ouvir Rádio Boa Nova
+            </strong>
+        </div>
+
+        <p style="font-size: 0.75rem; color: #666; margin-top: 12px; line-height: 1.3;">
+            <span class="boa-nova-indicator" style="color: #6c757d;">●</span> Transmissão contínua em tempo real<br>
+            Programação Espírita 24h
+        </p>
+    </div>
+</div>
+
+<script>
+    (function() {
+        // Garante o isolamento da instância local caso o widget seja instanciado
+        var widget = document.currentScript.previousElementSibling;
+        var audio = widget.querySelector('.boa-nova-audio');
+        var btn = widget.querySelector('.boa-nova-play-btn');
+        var icon = widget.querySelector('.boa-nova-icon');
+        var status = widget.querySelector('.boa-nova-status');
+        var indicator = widget.querySelector('.boa-nova-indicator');
+        
+        // Fallback defensivo de parâmetro Hugo
+        var streamUrl = "{{ .Site.Params.boaNovaStreamURL | default `https://8592.brasilstream.com.br/stream?identifica=2271463291458264000` }}";
+        var isConnecting = false;
+
+        btn.addEventListener('click', function() {
+            if (isConnecting) return; // Trava contra race condition por múltiplos cliques simultâneos
+
+            if (audio.paused) {
+                isConnecting = true;
+                btn.disabled = true;
+                status.innerText = "Conectando...";
+
+                // Garante que o stream leia do ponto ao vivo zerando o buffer
+                audio.src = streamUrl;
+                
+                var playPromise = audio.play();
+                
+                if (playPromise !== undefined) {
+                    playPromise.then(function() {
+                        isConnecting = false;
+                        btn.disabled = false;
+                        icon.innerText = "⏸️";
+                        status.innerText = "Sintonizado (Ao Vivo)";
+                        btn.style.background = "#dc3545"; // Vermelho / Stop
+                        btn.setAttribute("aria-label", "Pausar Rádio Boa Nova");
+                        indicator.style.color = "#28a745"; // Verde
+                    }).catch(function(error) {
+                        isConnecting = false;
+                        btn.disabled = false;
+                        console.error("Erro no stream de áudio:", error);
+                        status.innerText = "Erro ao sintonizar";
+                        indicator.style.color = "#dc3545"; // Vermelho
+                    });
+                }
+            } else {
+                audio.pause();
+                // Desconecta e limpa o buffer de rede no cliente
+                audio.removeAttribute('src');
+                audio.load();
+                
+                icon.innerText = "▶️";
+                status.innerText = "Ouvir Rádio Boa Nova";
+                btn.style.background = "#0056b3"; // Azul / Play
+                btn.setAttribute("aria-label", "Tocar Rádio Boa Nova Ao Vivo");
+                indicator.style.color = "#6c757d"; // Cinza
+            }
+        });
+    })();
+</script>
