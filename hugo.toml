@@ -29,7 +29,7 @@ pluralizeListTitles = false
     home = "right"
     list = "right"
     single = "right"
-    widgets = ["search", "live_audio", "boa_nova", "recent", "agenda_custom", "spotify", "mapa_custom", "categories"]
+    widgets = ["search", "live_audio", "radios_espiritas", "recent", "agenda_custom", "spotify", "mapa_custom", "categories"]
 
   [params.footer]
     copyrightText = "Lar Espírita Cristão"
